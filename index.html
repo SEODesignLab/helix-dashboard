@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#0a0e17">
+<title>Helix — Live Trading Desk</title>
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { background:#0a0e17; color:#e6edf3; font-family:'SF Mono',Menlo,Consolas,monospace; padding:18px; font-size:13px; }
+  a { color:#58a6ff; text-decoration:none; }
+  h1 { font-size:18px; color:#58a6ff; margin-bottom:2px; letter-spacing:-0.3px; }
+  .sub { color:#7d8590; font-size:11px; margin-bottom:16px; }
+  .sub b { color:#3fb950; }
+  .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:12px; }
+  .card { background:#11151f; border:1px solid #1e2633; border-radius:10px; padding:14px; }
+  .card h2 { font-size:12px; color:#9ea9b5; font-weight:600; margin-bottom:10px;
+             text-transform:uppercase; letter-spacing:0.6px; display:flex; justify-content:space-between; }
+  .card h2 span { color:#7d8590; font-weight:400; text-transform:none; letter-spacing:0; }
+  .hero { grid-column:1/-1; display:grid; grid-template-columns:repeat(auto-fit,minmax(140px,1fr)); gap:10px; }
+  .stat { background:#0d1119; border:1px solid #1a2230; border-radius:8px; padding:11px; }
+  .stat .lbl { color:#7d8590; font-size:10px; text-transform:uppercase; letter-spacing:0.5px; }
+  .stat .val { font-size:20px; margin-top:4px; font-weight:600; }
+  .stat .note { color:#7d8590; font-size:10px; margin-top:2px; }
+  .pos { color:#3fb950; } .neg { color:#f85149; } .neu { color:#d29922; }
+  table { width:100%; border-collapse:collapse; }
+  th { color:#7d8590; font-size:10px; text-transform:uppercase; text-align:left;
+       padding:5px 4px; border-bottom:1px solid #1e2633; letter-spacing:0.4px; font-weight:500; }
+  td { padding:6px 4px; border-bottom:1px solid #161b26; font-size:12px; }
+  tr:last-child td { border-bottom:none; }
+  .num { text-align:right; font-variant-numeric:tabular-nums; }
+  .bar { height:5px; background:#1a2230; border-radius:3px; overflow:hidden; margin-top:5px; }
+  .bar i { display:block; height:100%; border-radius:3px; }
+  .tag { display:inline-block; font-size:9px; padding:2px 6px; border-radius:4px;
+         border:1px solid #30363d; color:#9ea9b5; margin-left:5px; }
+  .tag.on { border-color:#238636; color:#3fb950; }
+  .tag.off { border-color:#6e2f2a; color:#f85149; }
+  .tag.warn { border-color:#7d5a1a; color:#d29922; }
+  .row { display:flex; justify-content:space-between; padding:4px 0; font-size:12px; }
+  .row .k { color:#7d8590; }
+  .foot { color:#484f58; font-size:10px; margin-top:16px; text-align:center; line-height:1.7; }
+  .dot { display:inline-block; width:6px; height:6px; border-radius:50%; background:#3fb950;
+         margin-right:5px; animation:pulse 2s infinite; }
+  @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.35} }
+  .empty { color:#484f58; font-size:11px; padding:8px 0; }
+</style>
+</head>
+<body>
+
+<h1><span class="dot"></span>Helix — Live Trading Desk</h1>
+<div class="sub" id="sub">connecting to Hyperliquid…</div>
+
+<div class="grid">
+
+  <div class="hero">
+    <div class="stat"><div class="lbl">Account Equity</div><div class="val" id="equity">—</div><div class="note" id="equity-note">&nbsp;</div></div>
+    <div class="stat"><div class="lbl">Open P&L</div><div class="val" id="upnl">—</div><div class="note" id="positions">—</div></div>
+    <div class="stat"><div class="lbl">Realized 30d</div><div class="val" id="p30">—</div><div class="note" id="p30n">bots only</div></div>
+    <div class="stat"><div class="lbl">Governor</div><div class="val" id="gov">—</div><div class="note" id="govn">&nbsp;</div></div>
+  </div>
+
+  <div class="card">
+    <h2>Strategy Performance <span id="strat-sum"></span></h2>
+    <table>
+      <thead><tr><th>Strategy</th><th class="num">Trades</th><th class="num">WR</th><th class="num">EV/trade</th><th class="num">Realized</th></tr></thead>
+      <tbody id="strat-body"><tr><td colspan="5" class="empty">loading…</td></tr></tbody>
+    </table>
+  </div>
+
+  <div class="card">
+    <h2>Capital Allocation <span>autopilot</span></h2>
+    <div id="alloc"></div>
+  </div>
+
+  <div class="card">
+    <h2>V4 Thesis Monitors <span>BTC / ETH / SOL</span></h2>
+    <div id="v4"></div>
+  </div>
+
+  <div class="card">
+    <h2>Open Positions <span>live from Hyperliquid</span></h2>
+    <div id="pos-list"></div>
+  </div>
+
+  <div class="card">
+    <h2>Recent Closes <span>all strategies</span></h2>
+    <div id="recent"></div>
+  </div>
+
+  <div class="card">
+    <h2>Equity Curve <span id="eqrange"></span></h2>
+    <svg id="chart" viewBox="0 0 400 110" style="width:100%;height:110px"></svg>
+    <div id="eqmeta" class="row"><span class="k">—</span></div>
+  </div>
+
+</div>
+
+<div class="foot">
+  Live data pulled directly from Hyperliquid's public API (read-only) · wallet 0xfd99…0829<br>
+  Snapshot refreshed <span id="gen">—</span> · figures are not financial advice
+</div>
+
+<script>
+const API = 'https://api.hyperliquid.xyz/info';
+const WALLET = '0xfd9996E88C3878805aDDA44cb36D427655280829';
+
+const $ = id => document.getElementById(id);
+const fmt = (n, d=2) => (n===null||n===undefined||isNaN(n)) ? '—' : Number(n).toLocaleString(undefined,{minimumFractionDigits:d,maximumFractionDigits:d});
+const money = n => (n>=0?'$':'-$') + fmt(Math.abs(n));
+const cls = n => n>0 ? 'pos' : (n<0 ? 'neg' : '');
+
+async function hl(body){
+  const r = await fetch(API, {method:'POST', headers:{'Content-Type':'application/json'}, body:JSON.stringify(body)});
+  if(!r.ok) throw new Error('HL '+r.status);
+  return r.json();
+}
+
+/* ---------- static snapshot (ledgers, autopilot, equity history) ---------- */
+async function loadSnapshot(){
+  try {
+    const r = await fetch('data/dashboard-data.json?t=' + Date.now());
+    if(!r.ok) throw new Error('snapshot '+r.status);
+    return await r.json();
+  } catch(e){ console.warn('snapshot unavailable:', e.message); return null; }
+}
+
+/* ---------- live account state ---------- */
+async function loadLive(){
+  const [st, spot] = await Promise.all([
+    hl({type:'clearinghouseState', user:WALLET}),
+    hl({type:'spotClearinghouseState', user:WALLET}).catch(()=>({balances:[]}))
+  ]);
+  let usdc = 0;
+  (spot.balances||[]).forEach(b => { if(b.coin==='USDC') usdc = parseFloat(b.total||0); });
+  const marginUsed = parseFloat((st.marginSummary||{}).totalMarginUsed||0);
+  if(usdc <= 0) usdc = parseFloat((st.marginSummary||{}).accountValue||0);
+  const positions = (st.assetPositions||[]).map(a=>{
+    const p = a.position;
+    return {
+      coin:p.coin, size:Math.abs(parseFloat(p.szi||0)),
+      entry:parseFloat(p.entryPx||0), value:parseFloat(p.positionValue||0),
+      upnl:parseFloat(p.unrealizedPnl||0),
+      liq:p.liquidationPx ? parseFloat(p.liquidationPx) : null,
+      lev:(p.leverage||{}).value
+    };
+  }).filter(p=>p.size>0);
+  return {equity:usdc, marginUsed, free:usdc-marginUsed, positions};
+}
+
+/* ---------- render ---------- */
+function renderLive(live){
+  const upnl = live.positions.reduce((s,p)=>s+p.upnl,0);
+  $('equity').textContent = '$' + fmt(live.equity);
+  $('equity-note').innerHTML = 'free $' + fmt(live.free);
+  $('upnl').textContent = money(upnl); $('upnl').className = 'val ' + cls(upnl);
+  $('positions').textContent = live.positions.length + ' open';
+
+  const rows = live.positions.slice().sort((a,b)=>b.upnl-a.upnl).map(p=>{
+    const lp = p.liq ? (p.liq <= 0.001 ? 'none' : '$'+fmt(p.liq, p.liq<1?5:2)) : 'none';
+    return `<tr>
+      <td>${p.coin}<span class="tag">${p.lev||'?'}x</span></td>
+      <td class="num">$${fmt(p.value)}</td>
+      <td class="num ${cls(p.upnl)}">${money(p.upnl)}</td>
+      <td class="num" style="color:#7d8590;font-size:11px">liq ${lp}</td>
+    </tr>`;
+  }).join('');
+  $('pos-list').innerHTML = rows
+    ? `<table><thead><tr><th>Asset</th><th class="num">Value</th><th class="num">P&L</th><th class="num">Liquidation</th></tr></thead><tbody>${rows}</tbody></table>`
+    : '<div class="empty">no open positions</div>';
+}
+
+function renderSnapshot(s){
+  if(!s){ $('strat-body').innerHTML = '<tr><td colspan="5" class="empty">snapshot unavailable</td></tr>'; return; }
+
+  // strategy table
+  const names = {momentum:'Momentum', dip:'Dip Recovery', copy:'Copy Trader'};
+  const st = s.strategies || {};
+  let totalTrades=0, totalRealized=0;
+  const body = Object.keys(names).map(k=>{
+    const d = st[k] || {};
+    totalTrades += d.trades||0; totalRealized += d.realized||0;
+    const ev = d.ev_per_trade||0;
+    return `<tr>
+      <td>${names[k]}</td>
+      <td class="num">${d.trades||0}<span style="color:#7d8590">${d.open?' ('+d.open+' open)':''}</span></td>
+      <td class="num">${d.win_rate||0}%</td>
+      <td class="num ${cls(ev)}">${ev>=0?'+':''}$${fmt(Math.abs(ev),2)}</td>
+      <td class="num ${cls(d.realized||0)}">${money(d.realized||0)}</td>
+    </tr>`;
+  }).join('');
+  $('strat-body').innerHTML = body;
+  $('strat-sum').textContent = `${totalTrades} trades · ${money(totalRealized)}`;
+
+  const p30 = totalRealized;
+  $('p30').textContent = money(p30); $('p30').className = 'val ' + cls(p30);
+
+  // allocation
+  const ap = s.autopilot || {};
+  const aps = ap.strategies || {};
+  let alloc = '';
+  const order = ['momentum','dip','copy','v4'];
+  order.forEach(k=>{
+    const a = aps[k]; if(!a) return;
+    const eff = a.effective_collateral ?? a.collateral;
+    if(k==='v4'){
+      alloc += `<div class="row"><span class="k">V4 Thesis<span class="tag on">armed</span></span>
+        <span>risk ${((a.risk_pct||0.02)*100).toFixed(1)}% <span style="color:#7d8590">· $75 reserve</span></span></div>`;
+      return;
+    }
+    const pct = live_equity ? Math.min(100, (eff/live_equity)*100) : 0;
+    const tag = a.enabled===false ? '<span class="tag off">paused</span>' : '';
+    alloc += `<div class="row"><span class="k">${names[k]||k}${tag}</span><span>$${fmt(eff,0)} <span style="color:#7d8590">· EV ${(a.ev_per_trade||0)>=0?'+':''}$${fmt(Math.abs(a.ev_per_trade||0),2)}</span></span></div>
+      <div class="bar"><i style="width:${pct.toFixed(1)}%;background:${a.enabled===false?'#484f58':'#3fb950'}"></i></div>`;
+  });
+  $('alloc').innerHTML = alloc || '<div class="empty">no allocation data</div>';
+
+  if(ap.drawdown_pct !== undefined){
+    $('gov').textContent = (ap.governor||'—').replace('_',' ');
+    $('gov').className = 'val ' + (ap.governor==='normal'?'pos':(ap.governor==='halted'?'neg':'neu'));
+    $('govn').textContent = `${fmt(ap.drawdown_pct,1)}% from peak $${fmt(ap.peak_equity,0)}`;
+  }
+
+  // v4 monitors
+  const v4 = s.v4 || {};
+  const v4rows = Object.keys(v4).map(k=>{
+    const v = v4[k];
+    const ph = (v.phase||'').replace('_',' ');
+    const c = v.phase==='WAITING' ? '#7d8590' : (v.phase && v.phase.startsWith('SIGNAL') ? '#3fb950' : '#d29922');
+    return `<div class="row"><span class="k">${k}</span>
+      <span style="color:${c}">${ph} <span style="color:#7d8590">· ${v.signals||0} sig${v.executed?' · '+v.executed+' traded':''}</span></span></div>`;
+  }).join('');
+  $('v4').innerHTML = v4rows || '<div class="empty">no monitor data</div>';
+
+  // recent closes
+  let recent = [];
+  Object.keys(st).forEach(k=>{
+    (st[k].recent||[]).forEach(r=>recent.push({...r, strat:k}));
+  });
+  recent.sort((a,b)=> (b.when||'').localeCompare(a.when||''));
+  recent = recent.slice(0,10);
+  $('recent').innerHTML = recent.length ? recent.map(r=>{
+    const p = r.pnl||0;
+    return `<div class="row"><span class="k">${r.coin||'?'} <span style="color:#484f58">${(r.when||'').slice(5,16)}</span></span>
+      <span class="${cls(p)}">${money(p)} <span style="color:#484f58">${(r.reason||'').slice(0,12)}</span></span></div>`;
+  }).join('') : '<div class="empty">no recent closes</div>';
+
+  // equity curve
+  drawCurve(s.equity_history || []);
+}
+
+let live_equity = 0;
+
+function drawCurve(hist){
+  const svg = $('chart');
+  if(!hist.length){ svg.innerHTML = `<text x="200" y="58" fill="#484f58" font-size="10" text-anchor="middle" font-family="monospace">accumulating daily snapshots…</text>`; $('eqmeta').innerHTML='<span class="k">first snapshot recorded — curve builds daily</span>'; return; }
+  const eq = hist.map(h=>h.equity);
+  const min = Math.min(...eq), max = Math.max(...eq), rng = (max-min)||1;
+  const W=400,H=110,pad=8;
+  const pts = eq.map((v,i)=>{
+    const x = pad + i*(W-2*pad)/Math.max(1,eq.length-1);
+    const y = H-pad - ((v-min)/rng)*(H-2*pad);
+    return [x,y];
+  });
+  const path = pts.map((p,i)=>(i?'L':'M')+p[0].toFixed(1)+','+p[1].toFixed(1)).join(' ');
+  const area = path + ` L${pts[pts.length-1][0].toFixed(1)},${H-pad} L${pts[0][0].toFixed(1)},${H-pad} Z`;
+  const up = eq[eq.length-1] >= eq[0];
+  const col = up ? '#3fb950' : '#f85149';
+  svg.innerHTML = `
+    <defs><linearGradient id="g" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="${col}" stop-opacity="0.28"/>
+      <stop offset="100%" stop-color="${col}" stop-opacity="0"/>
+    </linearGradient></defs>
+    <path d="${area}" fill="url(#g)"/>
+    <path d="${path}" fill="none" stroke="${col}" stroke-width="1.6"/>
+    ${pts.map(p=>`<circle cx="${p[0].toFixed(1)}" cy="${p[1].toFixed(1)}" r="1.8" fill="${col}"/>`).join('')}`;
+  const first = eq[0], last = eq[eq.length-1], chg = last-first;
+  $('eqrange').textContent = `${hist.length} days`;
+  $('eqmeta').innerHTML = `<span class="k">$${fmt(first)} → $${fmt(last)}</span>
+    <span class="${cls(chg)}">${chg>=0?'+':''}$${fmt(Math.abs(chg))} (${((chg/first)*100).toFixed(2)}%)</span>`;
+}
+
+/* ---------- boot ---------- */
+(async ()=>{
+  const snap = await loadSnapshot();
+  if(snap){
+    live_equity = (snap.autopilot||{}).equity_at_allocation || 0;
+    renderSnapshot(snap);
+    $('gen').textContent = (snap.generated||'').slice(0,16).replace('T',' ') + ' UTC';
+  } else {
+    renderSnapshot(null);
+  }
+  try {
+    const live = await loadLive();
+    live_equity = live.equity;
+    renderLive(live);
+    if(snap) renderSnapshot(snap); // re-render allocation bars with real equity
+    $('sub').innerHTML = `<b>●</b> live · Hyperliquid connected · ${live.positions.length} positions`;
+    setInterval(async ()=>{
+      try { const l = await loadLive(); live_equity = l.equity; renderLive(l); } catch(e){}
+    }, 30000);
+  } catch(e){
+    $('sub').textContent = 'live API unreachable — showing snapshot only';
+  }
+})();
+</script>
+</body>
+</html>

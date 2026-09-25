@@ -1,0 +1,345 @@
+{
+  "generated": "2026-09-25T03:27:09.112831+00:00",
+  "wallet": "0xfd9996E88C3878805aDDA44cb36D427655280829",
+  "strategies": {
+    "momentum": {
+      "trades": 19,
+      "open": 1,
+      "wins": 13,
+      "win_rate": 68.4,
+      "realized": 17.82,
+      "ev_per_trade": 0.938,
+      "pnl_7d": 2.21,
+      "pnl_30d": 17.82,
+      "recent": [
+        {
+          "coin": "MERL",
+          "pnl": -10.38,
+          "reason": "SL_HIT",
+          "when": "2026-09-25T03:02"
+        },
+        {
+          "coin": "BSV",
+          "pnl": -3.83,
+          "reason": "MAX_HOLD",
+          "when": "2026-09-24T06:26"
+        },
+        {
+          "coin": "NIL",
+          "pnl": 10.54,
+          "reason": "TP_HIT",
+          "when": "2026-09-23T06:02"
+        },
+        {
+          "coin": "kBONK",
+          "pnl": 5.92,
+          "reason": "MAX_HOLD",
+          "when": "2026-09-23T05:45"
+        },
+        {
+          "coin": "kPEPE",
+          "pnl": -2.52,
+          "reason": "MAX_HOLD",
+          "when": "2026-09-23T04:37"
+        },
+        {
+          "coin": "RENDER",
+          "pnl": 0.93,
+          "reason": "ON_CHAIN_GONE",
+          "when": "2026-09-22T05:38"
+        },
+        {
+          "coin": "FET",
+          "pnl": 1.55,
+          "reason": "SL_HIT",
+          "when": "2026-09-22T04:24"
+        },
+        {
+          "coin": "STRK",
+          "pnl": -0.07,
+          "reason": "SL_HIT",
+          "when": "2026-09-06T14:35"
+        },
+        {
+          "coin": "ZEN",
+          "pnl": -0.09,
+          "reason": "SL_HIT",
+          "when": "2026-09-06T07:13"
+        },
+        {
+          "coin": "PONS",
+          "pnl": 4.81,
+          "reason": "TP_HIT",
+          "when": "2026-09-05T08:38"
+        },
+        {
+          "coin": "DASH",
+          "pnl": 3.04,
+          "reason": "TP_HIT",
+          "when": "2026-09-05T05:14"
+        },
+        {
+          "coin": "ZEN",
+          "pnl": 4.03,
+          "reason": "TP_HIT",
+          "when": "2026-09-04T23:25"
+        }
+      ]
+    },
+    "dip": {
+      "trades": 53,
+      "open": 1,
+      "wins": 28,
+      "win_rate": 52.8,
+      "realized": 12.25,
+      "ev_per_trade": 0.231,
+      "pnl_7d": 1.68,
+      "pnl_30d": 10.88,
+      "recent": [
+        {
+          "coin": "PENDLE",
+          "pnl": 1.68,
+          "reason": "TP_HIT",
+          "when": "2026-09-24T19:20"
+        },
+        {
+          "coin": "PEOPLE",
+          "pnl": -0.93,
+          "reason": "SL_HIT",
+          "when": "2026-09-10T23:13"
+        },
+        {
+          "coin": "SKR",
+          "pnl": 0.25,
+          "reason": "MAX_HOLD_TIMEOUT",
+          "when": "2026-09-08T01:09"
+        },
+        {
+          "coin": "PUMP",
+          "pnl": -2.21,
+          "reason": "SL_HIT",
+          "when": "2026-09-05T19:05"
+        },
+        {
+          "coin": "ZORA",
+          "pnl": 1.96,
+          "reason": "TP_HIT",
+          "when": "2026-09-05T10:47"
+        },
+        {
+          "coin": "SKR",
+          "pnl": 1.37,
+          "reason": "TP_HIT",
+          "when": "2026-09-05T08:42"
+        },
+        {
+          "coin": "NIL",
+          "pnl": 2.63,
+          "reason": "TP_HIT",
+          "when": "2026-09-05T05:18"
+        },
+        {
+          "coin": "JTO",
+          "pnl": -1.61,
+          "reason": "SL_HIT",
+          "when": "2026-09-04T12:36"
+        },
+        {
+          "coin": "POL",
+          "pnl": 1.23,
+          "reason": "MAX_HOLD_TIMEOUT",
+          "when": "2026-09-03T18:12"
+        },
+        {
+          "coin": "BOME",
+          "pnl": 2.52,
+          "reason": "TP_HIT",
+          "when": "2026-09-03T15:00"
+        },
+        {
+          "coin": "MOVE",
+          "pnl": 2.2,
+          "reason": "TP_HIT",
+          "when": "2026-09-03T12:33"
+        },
+        {
+          "coin": "MET",
+          "pnl": 1.03,
+          "reason": "MAX_HOLD_TIMEOUT",
+          "when": "2026-09-03T12:22"
+        }
+      ]
+    },
+    "copy": {
+      "trades": 22,
+      "open": 4,
+      "wins": 9,
+      "win_rate": 40.9,
+      "realized": 0.6,
+      "ev_per_trade": 0.027,
+      "pnl_7d": -1.24,
+      "pnl_30d": -2.29,
+      "recent": [
+        {
+          "coin": "HYPE",
+          "pnl": -0.61,
+          "reason": "SL_HIT",
+          "when": "2026-09-24T02:10"
+        },
+        {
+          "coin": "WLD",
+          "pnl": -0.68,
+          "reason": "SL_HIT",
+          "when": "2026-09-23T14:10"
+        },
+        {
+          "coin": "HYPE",
+          "pnl": 1.2,
+          "reason": "TP_HIT",
+          "when": "2026-09-21T08:50"
+        },
+        {
+          "coin": "WLD",
+          "pnl": 0.55,
+          "reason": "MAX_HOLD",
+          "when": "2026-09-19T03:38"
+        },
+        {
+          "coin": "ETH",
+          "pnl": -0.55,
+          "reason": "SL_HIT",
+          "when": "2026-09-18T15:30"
+        },
+        {
+          "coin": "RENDER",
+          "pnl": 1.16,
+          "reason": "TP_HIT",
+          "when": "2026-09-18T13:45"
+        },
+        {
+          "coin": "ZEC",
+          "pnl": -2.31,
+          "reason": "MAX_HOLD",
+          "when": "2026-09-18T09:54"
+        },
+        {
+          "coin": "HYPE",
+          "pnl": -0.67,
+          "reason": "SL_HIT",
+          "when": "2026-09-18T01:01"
+        },
+        {
+          "coin": "BTC",
+          "pnl": -0.59,
+          "reason": "SL_HIT",
+          "when": "2026-09-15T18:50"
+        },
+        {
+          "coin": "LIT",
+          "pnl": 1.44,
+          "reason": "TP_HIT",
+          "when": "2026-09-11T00:03"
+        },
+        {
+          "coin": "HYPE",
+          "pnl": -0.56,
+          "reason": "SL_HIT",
+          "when": "2026-09-10T12:58"
+        },
+        {
+          "coin": "VVV",
+          "pnl": -0.68,
+          "reason": "SL_HIT",
+          "when": "2026-09-09T22:58"
+        }
+      ]
+    }
+  },
+  "autopilot": {
+    "updated": "2026-09-25T03:19:13.761604+00:00",
+    "equity_at_allocation": 347.72,
+    "peak_equity": 348.74,
+    "drawdown_pct": 0.3,
+    "governor": "normal",
+    "governor_multiplier": 1.0,
+    "projected_collateral": 99.33,
+    "budget_cap": 208.63,
+    "strategies": {
+      "momentum": {
+        "enabled": true,
+        "collateral": 27.88,
+        "effective_collateral": 27.88,
+        "max_open": 2,
+        "win_rate": 68.4,
+        "ev_per_trade": 0.938,
+        "trades": 19,
+        "rolling_pnl_7d": 2.21,
+        "score": 1.827,
+        "reason": "EV $+0.94 WR 68% 7d $+2.21 -> $42 to $28"
+      },
+      "dip": {
+        "enabled": true,
+        "collateral": 13.94,
+        "effective_collateral": 13.94,
+        "max_open": 2,
+        "win_rate": 52.8,
+        "ev_per_trade": 0.231,
+        "trades": 53,
+        "rolling_pnl_7d": 1.68,
+        "score": 1.366,
+        "reason": "steady: EV $+0.23 WR 53%"
+      },
+      "copy": {
+        "enabled": true,
+        "collateral": 5.23,
+        "effective_collateral": 5.23,
+        "max_open": 3,
+        "win_rate": 40.9,
+        "ev_per_trade": 0.027,
+        "trades": 22,
+        "rolling_pnl_7d": -1.24,
+        "score": -1.217,
+        "reason": "steady: EV $+0.03 WR 41%"
+      },
+      "v4": {
+        "enabled": true,
+        "collateral": null,
+        "effective_collateral": null,
+        "max_open": 2,
+        "win_rate": 0.0,
+        "ev_per_trade": 0.0,
+        "trades": 1,
+        "rolling_pnl_7d": 0.0,
+        "score": null,
+        "reason": "reserve $75.0 for thesis entries"
+      }
+    }
+  },
+  "equity_history": [
+    {
+      "date": "2026-09-25",
+      "equity": 348.75,
+      "ts": "2026-09-25T03:04:31.611252+00:00"
+    }
+  ],
+  "v4": {
+    "BTC": {
+      "phase": "WAITING",
+      "signals": 6,
+      "executed": 1,
+      "support": 0.33
+    },
+    "ETH": {
+      "phase": "WAITING",
+      "signals": 5,
+      "executed": 0,
+      "support": 2421.29
+    },
+    "SOL": {
+      "phase": "WAITING",
+      "signals": 0,
+      "executed": 0,
+      "support": 99.24
+    }
+  }
+}
