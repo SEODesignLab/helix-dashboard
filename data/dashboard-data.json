@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-25T12:33:09.026589+00:00",
+  "generated": "2026-09-25T12:49:09.138703+00:00",
   "wallet": "0xfd9996E88C3878805aDDA44cb36D427655280829",
   "strategies": {
     "momentum": {
@@ -256,26 +256,26 @@
     }
   },
   "autopilot": {
-    "updated": "2026-09-25T12:23:16.009545+00:00",
-    "equity_at_allocation": 356.23,
+    "updated": "2026-09-25T12:39:11.455156+00:00",
+    "equity_at_allocation": 357.55,
     "peak_equity": 358.9,
-    "drawdown_pct": 0.7,
+    "drawdown_pct": 0.4,
     "governor": "normal",
     "governor_multiplier": 1.0,
-    "projected_collateral": 100.39,
-    "budget_cap": 213.74,
+    "projected_collateral": 81.45,
+    "budget_cap": 214.53,
     "strategies": {
       "momentum": {
         "enabled": true,
-        "collateral": 28.41,
-        "effective_collateral": 28.41,
+        "collateral": 18.94,
+        "effective_collateral": 18.94,
         "max_open": 2,
-        "win_rate": 68.4,
-        "ev_per_trade": 0.938,
-        "trades": 19,
-        "rolling_pnl_7d": 2.21,
-        "score": 1.907,
-        "reason": "steady: EV $+0.94 WR 68%"
+        "win_rate": 65.0,
+        "ev_per_trade": 0.687,
+        "trades": 20,
+        "rolling_pnl_7d": -1.87,
+        "score": -1.226,
+        "reason": "EV $+0.69 WR 65% 7d $-1.87 -> $28 to $19"
       },
       "dip": {
         "enabled": true,
