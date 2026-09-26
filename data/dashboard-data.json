@@ -1,17 +1,23 @@
 {
-  "generated": "2026-09-26T09:37:18.032499+00:00",
+  "generated": "2026-09-26T09:53:18.147249+00:00",
   "wallet": "0xfd9996E88C3878805aDDA44cb36D427655280829",
   "strategies": {
     "momentum": {
-      "trades": 21,
-      "open": 1,
+      "trades": 22,
+      "open": 0,
       "wins": 14,
-      "win_rate": 66.7,
-      "realized": 17.06,
-      "ev_per_trade": 0.812,
-      "pnl_7d": 1.45,
-      "pnl_30d": 17.06,
+      "win_rate": 63.6,
+      "realized": 16.21,
+      "ev_per_trade": 0.737,
+      "pnl_7d": 0.61,
+      "pnl_30d": 16.21,
       "recent": [
+        {
+          "coin": "REZ",
+          "pnl": -0.85,
+          "reason": "ON_CHAIN_GONE",
+          "when": "2026-09-26T09:31"
+        },
         {
           "coin": "FET",
           "pnl": 3.32,
@@ -77,12 +83,6 @@
           "pnl": -0.09,
           "reason": "SL_HIT",
           "when": "2026-09-06T07:13"
-        },
-        {
-          "coin": "PONS",
-          "pnl": 4.81,
-          "reason": "TP_HIT",
-          "when": "2026-09-05T08:38"
         }
       ]
     },
@@ -256,26 +256,26 @@
     }
   },
   "autopilot": {
-    "updated": "2026-09-26T09:27:23.675442+00:00",
-    "equity_at_allocation": 354.13,
+    "updated": "2026-09-26T09:43:19.287837+00:00",
+    "equity_at_allocation": 354.36,
     "peak_equity": 361.81,
     "drawdown_pct": 2.1,
     "governor": "normal",
     "governor_multiplier": 1.0,
     "projected_collateral": 101.41,
-    "budget_cap": 212.48,
+    "budget_cap": 212.61,
     "strategies": {
       "momentum": {
         "enabled": true,
         "collateral": 28.42,
         "effective_collateral": 28.42,
         "max_open": 2,
-        "win_rate": 66.7,
-        "ev_per_trade": 0.812,
-        "trades": 21,
-        "rolling_pnl_7d": 1.45,
-        "score": 1.3,
-        "reason": "steady: EV $+0.81 WR 67%"
+        "win_rate": 63.6,
+        "ev_per_trade": 0.737,
+        "trades": 22,
+        "rolling_pnl_7d": 0.61,
+        "score": 0.644,
+        "reason": "steady: EV $+0.74 WR 64%"
       },
       "dip": {
         "enabled": true,
