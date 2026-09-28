@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-28T00:48:54.723211+00:00",
+  "generated": "2026-09-28T01:04:54.845799+00:00",
   "wallet": "0xfd9996E88C3878805aDDA44cb36D427655280829",
   "strategies": {
     "momentum": {
@@ -94,7 +94,7 @@
       "realized": 12.25,
       "ev_per_trade": 0.231,
       "pnl_7d": 1.68,
-      "pnl_30d": 7.57,
+      "pnl_30d": 7.31,
       "recent": [
         {
           "coin": "PENDLE",
@@ -256,14 +256,14 @@
     }
   },
   "autopilot": {
-    "updated": "2026-09-28T00:38:56.773048+00:00",
-    "equity_at_allocation": 349.05,
+    "updated": "2026-09-28T00:55:06.194324+00:00",
+    "equity_at_allocation": 349.57,
     "peak_equity": 361.81,
-    "drawdown_pct": 3.5,
+    "drawdown_pct": 3.4,
     "governor": "normal",
     "governor_multiplier": 1.0,
     "projected_collateral": 54.55,
-    "budget_cap": 209.43,
+    "budget_cap": 209.74,
     "strategies": {
       "momentum": {
         "enabled": true,
