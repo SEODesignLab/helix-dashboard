@@ -1,17 +1,23 @@
 {
-  "generated": "2026-09-29T07:29:05.898793+00:00",
+  "generated": "2026-09-29T07:45:06.022130+00:00",
   "wallet": "0xfd9996E88C3878805aDDA44cb36D427655280829",
   "strategies": {
     "momentum": {
-      "trades": 26,
-      "open": 2,
+      "trades": 27,
+      "open": 1,
       "wins": 15,
-      "win_rate": 57.7,
-      "realized": 10.45,
-      "ev_per_trade": 0.402,
-      "pnl_7d": -7.64,
-      "pnl_30d": 10.45,
+      "win_rate": 55.6,
+      "realized": 9.46,
+      "ev_per_trade": 0.35,
+      "pnl_7d": -8.63,
+      "pnl_30d": 9.46,
       "recent": [
+        {
+          "coin": "ALGO",
+          "pnl": -0.99,
+          "reason": "SL_HIT",
+          "when": "2026-09-29T07:39"
+        },
         {
           "coin": "PUMP",
           "pnl": -1.11,
@@ -77,12 +83,6 @@
           "pnl": 5.92,
           "reason": "MAX_HOLD",
           "when": "2026-09-23T05:45"
-        },
-        {
-          "coin": "kPEPE",
-          "pnl": -2.52,
-          "reason": "MAX_HOLD",
-          "when": "2026-09-23T04:37"
         }
       ]
     },
@@ -256,14 +256,14 @@
     }
   },
   "autopilot": {
-    "updated": "2026-09-29T07:19:07.192033+00:00",
-    "equity_at_allocation": 345.01,
+    "updated": "2026-09-29T07:35:14.356553+00:00",
+    "equity_at_allocation": 344.5,
     "peak_equity": 361.81,
-    "drawdown_pct": 4.6,
+    "drawdown_pct": 4.8,
     "governor": "normal",
     "governor_multiplier": 1.0,
     "projected_collateral": 54.55,
-    "budget_cap": 207.01,
+    "budget_cap": 206.7,
     "strategies": {
       "momentum": {
         "enabled": true,
