@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-29T08:49:06.494253+00:00",
+  "generated": "2026-09-29T09:05:06.609257+00:00",
   "wallet": "0xfd9996E88C3878805aDDA44cb36D427655280829",
   "strategies": {
     "momentum": {
@@ -94,7 +94,7 @@
       "realized": 11.12,
       "ev_per_trade": 0.206,
       "pnl_7d": 0.56,
-      "pnl_30d": 6.18,
+      "pnl_30d": 4.83,
       "recent": [
         {
           "coin": "SOPH",
@@ -256,14 +256,14 @@
     }
   },
   "autopilot": {
-    "updated": "2026-09-29T08:39:13.065311+00:00",
-    "equity_at_allocation": 344.16,
+    "updated": "2026-09-29T08:55:08.847808+00:00",
+    "equity_at_allocation": 344.45,
     "peak_equity": 361.81,
-    "drawdown_pct": 4.9,
+    "drawdown_pct": 4.8,
     "governor": "normal",
     "governor_multiplier": 1.0,
     "projected_collateral": 54.55,
-    "budget_cap": 206.49,
+    "budget_cap": 206.67,
     "strategies": {
       "momentum": {
         "enabled": true,
