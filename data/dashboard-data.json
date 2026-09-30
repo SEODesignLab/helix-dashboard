@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-30T17:21:20.840988+00:00",
+  "generated": "2026-09-30T17:37:20.962059+00:00",
   "wallet": "0xfd9996E88C3878805aDDA44cb36D427655280829",
   "strategies": {
     "momentum": {
@@ -87,15 +87,21 @@
       ]
     },
     "dip": {
-      "trades": 56,
-      "open": 6,
+      "trades": 57,
+      "open": 5,
       "wins": 29,
-      "win_rate": 51.8,
-      "realized": 9.16,
-      "ev_per_trade": 0.164,
-      "pnl_7d": -1.41,
-      "pnl_30d": 11.25,
+      "win_rate": 50.9,
+      "realized": 7.08,
+      "ev_per_trade": 0.124,
+      "pnl_7d": -3.49,
+      "pnl_30d": 9.17,
       "recent": [
+        {
+          "coin": "SKR",
+          "pnl": -2.08,
+          "reason": "SL_HIT",
+          "when": "2026-09-30T17:34"
+        },
         {
           "coin": "USELESS",
           "pnl": 1.15,
@@ -161,12 +167,6 @@
           "pnl": -1.61,
           "reason": "SL_HIT",
           "when": "2026-09-04T12:36"
-        },
-        {
-          "coin": "POL",
-          "pnl": 1.23,
-          "reason": "MAX_HOLD_TIMEOUT",
-          "when": "2026-09-03T18:12"
         }
       ]
     },
@@ -256,14 +256,14 @@
     }
   },
   "autopilot": {
-    "updated": "2026-09-30T17:11:32.438381+00:00",
-    "equity_at_allocation": 344.46,
+    "updated": "2026-09-30T17:27:29.119287+00:00",
+    "equity_at_allocation": 342.67,
     "peak_equity": 361.81,
-    "drawdown_pct": 4.8,
+    "drawdown_pct": 5.3,
     "governor": "normal",
     "governor_multiplier": 1.0,
     "projected_collateral": 63.24,
-    "budget_cap": 206.67,
+    "budget_cap": 205.6,
     "strategies": {
       "momentum": {
         "enabled": true,
