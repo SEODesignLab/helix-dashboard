@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-29T23:45:13.114617+00:00",
+  "generated": "2026-09-30T00:01:13.230171+00:00",
   "wallet": "0xfd9996E88C3878805aDDA44cb36D427655280829",
   "strategies": {
     "momentum": {
@@ -94,7 +94,7 @@
       "realized": 8.02,
       "ev_per_trade": 0.146,
       "pnl_7d": -2.55,
-      "pnl_30d": 4.28,
+      "pnl_30d": 9.26,
       "recent": [
         {
           "coin": "PONS",
@@ -256,14 +256,14 @@
     }
   },
   "autopilot": {
-    "updated": "2026-09-29T23:35:14.322376+00:00",
-    "equity_at_allocation": 341.26,
+    "updated": "2026-09-29T23:51:16.505544+00:00",
+    "equity_at_allocation": 340.92,
     "peak_equity": 361.81,
-    "drawdown_pct": 5.7,
+    "drawdown_pct": 5.8,
     "governor": "normal",
     "governor_multiplier": 1.0,
-    "projected_collateral": 54.55,
-    "budget_cap": 204.76,
+    "projected_collateral": 45.27,
+    "budget_cap": 204.55,
     "strategies": {
       "momentum": {
         "enabled": true,
@@ -279,15 +279,15 @@
       },
       "dip": {
         "enabled": true,
-        "collateral": 13.93,
-        "effective_collateral": 13.93,
+        "collateral": 9.29,
+        "effective_collateral": 9.29,
         "max_open": 2,
-        "win_rate": 51.9,
-        "ev_per_trade": 0.206,
-        "trades": 54,
-        "rolling_pnl_7d": 0.56,
-        "score": 0.513,
-        "reason": "steady: EV $+0.21 WR 52%"
+        "win_rate": 50.9,
+        "ev_per_trade": 0.146,
+        "trades": 55,
+        "rolling_pnl_7d": -2.55,
+        "score": -1.847,
+        "reason": "EV $+0.15 WR 51% 7d $-2.55 -> $14 to $9"
       },
       "copy": {
         "enabled": true,
