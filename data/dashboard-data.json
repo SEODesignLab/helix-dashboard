@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-02T09:37:29.666784+00:00",
+  "generated": "2026-10-02T09:53:29.772847+00:00",
   "wallet": "0xfd9996E88C3878805aDDA44cb36D427655280829",
   "strategies": {
     "momentum": {
@@ -10,7 +10,7 @@
       "realized": 7.75,
       "ev_per_trade": 0.25,
       "pnl_7d": -10.07,
-      "pnl_30d": 13.08,
+      "pnl_30d": 13.0,
       "recent": [
         {
           "coin": "ICP",
@@ -256,14 +256,14 @@
     }
   },
   "autopilot": {
-    "updated": "2026-10-02T09:27:32.130083+00:00",
-    "equity_at_allocation": 346.2,
+    "updated": "2026-10-02T09:43:35.631201+00:00",
+    "equity_at_allocation": 346.27,
     "peak_equity": 361.81,
     "drawdown_pct": 4.3,
     "governor": "normal",
     "governor_multiplier": 1.0,
     "projected_collateral": 61.74,
-    "budget_cap": 207.72,
+    "budget_cap": 207.76,
     "strategies": {
       "momentum": {
         "enabled": true,
