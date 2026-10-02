@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-02T18:25:33.514230+00:00",
+  "generated": "2026-10-02T18:41:33.631830+00:00",
   "wallet": "0xfd9996E88C3878805aDDA44cb36D427655280829",
   "strategies": {
     "momentum": {
@@ -87,15 +87,33 @@
       ]
     },
     "dip": {
-      "trades": 66,
-      "open": 8,
+      "trades": 69,
+      "open": 5,
       "wins": 34,
-      "win_rate": 51.5,
-      "realized": 8.11,
-      "ev_per_trade": 0.123,
-      "pnl_7d": -4.14,
-      "pnl_30d": 6.0,
+      "win_rate": 49.3,
+      "realized": 4.86,
+      "ev_per_trade": 0.07,
+      "pnl_7d": -7.39,
+      "pnl_30d": 2.75,
       "recent": [
+        {
+          "coin": "MET",
+          "pnl": -1.03,
+          "reason": "SL_HIT",
+          "when": "2026-10-02T18:36"
+        },
+        {
+          "coin": "JTO",
+          "pnl": -1.05,
+          "reason": "SL_HIT",
+          "when": "2026-10-02T18:36"
+        },
+        {
+          "coin": "LIT",
+          "pnl": -1.17,
+          "reason": "SL_HIT",
+          "when": "2026-10-02T18:36"
+        },
         {
           "coin": "PONS",
           "pnl": -0.55,
@@ -149,24 +167,6 @@
           "pnl": -0.69,
           "reason": "SL_HIT",
           "when": "2026-09-30T18:30"
-        },
-        {
-          "coin": "SKR",
-          "pnl": -2.08,
-          "reason": "SL_HIT",
-          "when": "2026-09-30T17:34"
-        },
-        {
-          "coin": "USELESS",
-          "pnl": 1.15,
-          "reason": "TP_HIT",
-          "when": "2026-09-30T13:26"
-        },
-        {
-          "coin": "PONS",
-          "pnl": -3.11,
-          "reason": "SL_HIT",
-          "when": "2026-09-29T23:39"
         }
       ]
     },
@@ -256,14 +256,14 @@
     }
   },
   "autopilot": {
-    "updated": "2026-10-02T18:15:37.950702+00:00",
-    "equity_at_allocation": 338.94,
+    "updated": "2026-10-02T18:31:35.510328+00:00",
+    "equity_at_allocation": 336.7,
     "peak_equity": 361.81,
-    "drawdown_pct": 6.3,
+    "drawdown_pct": 6.9,
     "governor": "normal",
     "governor_multiplier": 1.0,
-    "projected_collateral": 63.27,
-    "budget_cap": 203.36,
+    "projected_collateral": 61.65,
+    "budget_cap": 202.02,
     "strategies": {
       "momentum": {
         "enabled": true,
@@ -291,15 +291,15 @@
       },
       "copy": {
         "enabled": true,
-        "collateral": 14.01,
-        "effective_collateral": 14.01,
+        "collateral": 13.47,
+        "effective_collateral": 13.47,
         "max_open": 3,
         "win_rate": 46.2,
         "ev_per_trade": 0.109,
         "trades": 26,
         "rolling_pnl_7d": 0.63,
         "score": 1.031,
-        "reason": "steady: EV $+0.11 WR 46%"
+        "reason": "EV $+0.11 WR 46% 7d $+0.63 -> $14 to $13"
       },
       "v4": {
         "enabled": true,
