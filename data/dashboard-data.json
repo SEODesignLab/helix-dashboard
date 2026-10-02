@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-02T15:13:32.102886+00:00",
+  "generated": "2026-10-02T15:29:32.222122+00:00",
   "wallet": "0xfd9996E88C3878805aDDA44cb36D427655280829",
   "strategies": {
     "momentum": {
@@ -87,15 +87,21 @@
       ]
     },
     "dip": {
-      "trades": 64,
+      "trades": 65,
       "open": 7,
       "wins": 34,
-      "win_rate": 53.1,
-      "realized": 9.75,
-      "ev_per_trade": 0.152,
-      "pnl_7d": -2.5,
-      "pnl_30d": 7.65,
+      "win_rate": 52.3,
+      "realized": 8.65,
+      "ev_per_trade": 0.133,
+      "pnl_7d": -3.6,
+      "pnl_30d": 6.55,
       "recent": [
+        {
+          "coin": "2Z",
+          "pnl": -1.1,
+          "reason": "SL_HIT",
+          "when": "2026-10-02T15:23"
+        },
         {
           "coin": "PENDLE",
           "pnl": 1.05,
@@ -161,12 +167,6 @@
           "pnl": -1.13,
           "reason": "SL_HIT",
           "when": "2026-09-28T03:31"
-        },
-        {
-          "coin": "PENDLE",
-          "pnl": 1.68,
-          "reason": "TP_HIT",
-          "when": "2026-09-24T19:20"
         }
       ]
     },
@@ -256,14 +256,14 @@
     }
   },
   "autopilot": {
-    "updated": "2026-10-02T15:03:39.582512+00:00",
-    "equity_at_allocation": 344.09,
+    "updated": "2026-10-02T15:19:33.380661+00:00",
+    "equity_at_allocation": 344.01,
     "peak_equity": 361.81,
     "drawdown_pct": 4.9,
     "governor": "normal",
     "governor_multiplier": 1.0,
     "projected_collateral": 63.27,
-    "budget_cap": 206.46,
+    "budget_cap": 206.41,
     "strategies": {
       "momentum": {
         "enabled": true,
