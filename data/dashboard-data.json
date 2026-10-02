@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-02T02:41:26.619289+00:00",
+  "generated": "2026-10-02T02:57:26.745086+00:00",
   "wallet": "0xfd9996E88C3878805aDDA44cb36D427655280829",
   "strategies": {
     "momentum": {
@@ -87,15 +87,21 @@
       ]
     },
     "dip": {
-      "trades": 60,
-      "open": 11,
-      "wins": 30,
-      "win_rate": 50.0,
-      "realized": 6.13,
-      "ev_per_trade": 0.102,
-      "pnl_7d": -6.12,
-      "pnl_30d": 3.13,
+      "trades": 61,
+      "open": 10,
+      "wins": 31,
+      "win_rate": 50.8,
+      "realized": 7.08,
+      "ev_per_trade": 0.116,
+      "pnl_7d": -5.17,
+      "pnl_30d": 4.07,
       "recent": [
+        {
+          "coin": "FET",
+          "pnl": 0.95,
+          "reason": "TP_HIT",
+          "when": "2026-10-02T02:55"
+        },
         {
           "coin": "MORPHO",
           "pnl": 0.91,
@@ -161,12 +167,6 @@
           "pnl": -2.21,
           "reason": "SL_HIT",
           "when": "2026-09-05T19:05"
-        },
-        {
-          "coin": "ZORA",
-          "pnl": 1.96,
-          "reason": "TP_HIT",
-          "when": "2026-09-05T10:47"
         }
       ]
     },
@@ -256,14 +256,14 @@
     }
   },
   "autopilot": {
-    "updated": "2026-10-02T02:31:27.787833+00:00",
-    "equity_at_allocation": 341.48,
+    "updated": "2026-10-02T02:47:33.135538+00:00",
+    "equity_at_allocation": 342.4,
     "peak_equity": 361.81,
-    "drawdown_pct": 5.6,
+    "drawdown_pct": 5.4,
     "governor": "normal",
     "governor_multiplier": 1.0,
     "projected_collateral": 61.74,
-    "budget_cap": 204.89,
+    "budget_cap": 205.44,
     "strategies": {
       "momentum": {
         "enabled": true,
