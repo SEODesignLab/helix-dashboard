@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-02T16:17:32.563358+00:00",
+  "generated": "2026-10-02T16:33:32.695522+00:00",
   "wallet": "0xfd9996E88C3878805aDDA44cb36D427655280829",
   "strategies": {
     "momentum": {
@@ -87,15 +87,21 @@
       ]
     },
     "dip": {
-      "trades": 65,
-      "open": 7,
+      "trades": 66,
+      "open": 6,
       "wins": 34,
-      "win_rate": 52.3,
-      "realized": 8.65,
-      "ev_per_trade": 0.133,
-      "pnl_7d": -3.6,
-      "pnl_30d": 6.55,
+      "win_rate": 51.5,
+      "realized": 8.11,
+      "ev_per_trade": 0.123,
+      "pnl_7d": -4.14,
+      "pnl_30d": 6.0,
       "recent": [
+        {
+          "coin": "PONS",
+          "pnl": -0.55,
+          "reason": "MAX_HOLD_TIMEOUT",
+          "when": "2026-10-02T16:31"
+        },
         {
           "coin": "2Z",
           "pnl": -1.1,
@@ -161,12 +167,6 @@
           "pnl": -3.11,
           "reason": "SL_HIT",
           "when": "2026-09-29T23:39"
-        },
-        {
-          "coin": "SOPH",
-          "pnl": -1.13,
-          "reason": "SL_HIT",
-          "when": "2026-09-28T03:31"
         }
       ]
     },
@@ -256,14 +256,14 @@
     }
   },
   "autopilot": {
-    "updated": "2026-10-02T16:07:35.773807+00:00",
-    "equity_at_allocation": 343.85,
+    "updated": "2026-10-02T16:23:34.141882+00:00",
+    "equity_at_allocation": 344.03,
     "peak_equity": 361.81,
-    "drawdown_pct": 5.0,
+    "drawdown_pct": 4.9,
     "governor": "normal",
     "governor_multiplier": 1.0,
     "projected_collateral": 63.27,
-    "budget_cap": 206.31,
+    "budget_cap": 206.42,
     "strategies": {
       "momentum": {
         "enabled": true,
