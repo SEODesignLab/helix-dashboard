@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-02T05:05:27.663453+00:00",
+  "generated": "2026-10-02T05:21:27.788970+00:00",
   "wallet": "0xfd9996E88C3878805aDDA44cb36D427655280829",
   "strategies": {
     "momentum": {
@@ -87,15 +87,21 @@
       ]
     },
     "dip": {
-      "trades": 61,
-      "open": 10,
-      "wins": 31,
-      "win_rate": 50.8,
-      "realized": 7.08,
-      "ev_per_trade": 0.116,
-      "pnl_7d": -5.17,
-      "pnl_30d": 4.07,
+      "trades": 62,
+      "open": 9,
+      "wins": 32,
+      "win_rate": 51.6,
+      "realized": 8.01,
+      "ev_per_trade": 0.129,
+      "pnl_7d": -4.24,
+      "pnl_30d": 5.01,
       "recent": [
+        {
+          "coin": "USELESS",
+          "pnl": 0.93,
+          "reason": "TP_HIT",
+          "when": "2026-10-02T05:11"
+        },
         {
           "coin": "FET",
           "pnl": 0.95,
@@ -161,12 +167,6 @@
           "pnl": 0.25,
           "reason": "MAX_HOLD_TIMEOUT",
           "when": "2026-09-08T01:09"
-        },
-        {
-          "coin": "PUMP",
-          "pnl": -2.21,
-          "reason": "SL_HIT",
-          "when": "2026-09-05T19:05"
         }
       ]
     },
@@ -256,14 +256,14 @@
     }
   },
   "autopilot": {
-    "updated": "2026-10-02T04:55:29.216072+00:00",
-    "equity_at_allocation": 347.59,
+    "updated": "2026-10-02T05:11:32.234483+00:00",
+    "equity_at_allocation": 346.8,
     "peak_equity": 361.81,
-    "drawdown_pct": 3.9,
+    "drawdown_pct": 4.1,
     "governor": "normal",
     "governor_multiplier": 1.0,
     "projected_collateral": 61.74,
-    "budget_cap": 208.55,
+    "budget_cap": 208.08,
     "strategies": {
       "momentum": {
         "enabled": true,
