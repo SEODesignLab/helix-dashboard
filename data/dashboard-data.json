@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-02T18:41:33.631830+00:00",
+  "generated": "2026-10-02T18:57:33.747040+00:00",
   "wallet": "0xfd9996E88C3878805aDDA44cb36D427655280829",
   "strategies": {
     "momentum": {
@@ -87,15 +87,33 @@
       ]
     },
     "dip": {
-      "trades": 69,
-      "open": 5,
+      "trades": 72,
+      "open": 3,
       "wins": 34,
-      "win_rate": 49.3,
-      "realized": 4.86,
-      "ev_per_trade": 0.07,
-      "pnl_7d": -7.39,
-      "pnl_30d": 2.75,
+      "win_rate": 47.2,
+      "realized": 2.74,
+      "ev_per_trade": 0.038,
+      "pnl_7d": -9.51,
+      "pnl_30d": 0.64,
       "recent": [
+        {
+          "coin": "ONDO",
+          "pnl": -0.69,
+          "reason": "SL_HIT",
+          "when": "2026-10-02T18:47"
+        },
+        {
+          "coin": "XPL",
+          "pnl": -0.69,
+          "reason": "SL_HIT",
+          "when": "2026-10-02T18:47"
+        },
+        {
+          "coin": "ZORA",
+          "pnl": -0.74,
+          "reason": "SL_HIT",
+          "when": "2026-10-02T18:47"
+        },
         {
           "coin": "MET",
           "pnl": -1.03,
@@ -149,24 +167,6 @@
           "pnl": 0.95,
           "reason": "TP_HIT",
           "when": "2026-10-02T02:55"
-        },
-        {
-          "coin": "MORPHO",
-          "pnl": 0.91,
-          "reason": "MAX_HOLD_TIMEOUT",
-          "when": "2026-10-02T00:28"
-        },
-        {
-          "coin": "USELESS",
-          "pnl": -1.16,
-          "reason": "SL_HIT",
-          "when": "2026-10-01T10:11"
-        },
-        {
-          "coin": "XPL",
-          "pnl": -0.69,
-          "reason": "SL_HIT",
-          "when": "2026-09-30T18:30"
         }
       ]
     },
@@ -256,14 +256,14 @@
     }
   },
   "autopilot": {
-    "updated": "2026-10-02T18:31:35.510328+00:00",
-    "equity_at_allocation": 336.7,
+    "updated": "2026-10-02T18:47:35.101752+00:00",
+    "equity_at_allocation": 334.06,
     "peak_equity": 361.81,
-    "drawdown_pct": 6.9,
+    "drawdown_pct": 7.7,
     "governor": "normal",
     "governor_multiplier": 1.0,
     "projected_collateral": 61.65,
-    "budget_cap": 202.02,
+    "budget_cap": 200.44,
     "strategies": {
       "momentum": {
         "enabled": true,
@@ -282,12 +282,12 @@
         "collateral": 5.12,
         "effective_collateral": 5.12,
         "max_open": 2,
-        "win_rate": 51.5,
-        "ev_per_trade": 0.123,
-        "trades": 66,
-        "rolling_pnl_7d": -4.14,
-        "score": -2.534,
-        "reason": "steady: EV $+0.12 WR 52%"
+        "win_rate": 49.3,
+        "ev_per_trade": 0.07,
+        "trades": 69,
+        "rolling_pnl_7d": -7.39,
+        "score": -5.039,
+        "reason": "steady: EV $+0.07 WR 49%"
       },
       "copy": {
         "enabled": true,
@@ -298,8 +298,8 @@
         "ev_per_trade": 0.109,
         "trades": 26,
         "rolling_pnl_7d": 0.63,
-        "score": 1.031,
-        "reason": "EV $+0.11 WR 46% 7d $+0.63 -> $14 to $13"
+        "score": 1.032,
+        "reason": "steady: EV $+0.11 WR 46%"
       },
       "v4": {
         "enabled": true,
