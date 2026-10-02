@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-02T01:53:26.269405+00:00",
+  "generated": "2026-10-02T02:09:26.380871+00:00",
   "wallet": "0xfd9996E88C3878805aDDA44cb36D427655280829",
   "strategies": {
     "momentum": {
@@ -94,7 +94,7 @@
       "realized": 6.13,
       "ev_per_trade": 0.102,
       "pnl_7d": -6.12,
-      "pnl_30d": 1.61,
+      "pnl_30d": 3.13,
       "recent": [
         {
           "coin": "MORPHO",
@@ -256,14 +256,14 @@
     }
   },
   "autopilot": {
-    "updated": "2026-10-02T01:43:27.476915+00:00",
-    "equity_at_allocation": 339.73,
+    "updated": "2026-10-02T01:59:28.546764+00:00",
+    "equity_at_allocation": 341.85,
     "peak_equity": 361.81,
-    "drawdown_pct": 6.1,
+    "drawdown_pct": 5.5,
     "governor": "normal",
     "governor_multiplier": 1.0,
     "projected_collateral": 61.74,
-    "budget_cap": 203.84,
+    "budget_cap": 205.11,
     "strategies": {
       "momentum": {
         "enabled": true,
