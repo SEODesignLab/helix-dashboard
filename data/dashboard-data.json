@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-03T03:29:37.474616+00:00",
+  "generated": "2026-10-03T03:45:37.585075+00:00",
   "wallet": "0xfd9996E88C3878805aDDA44cb36D427655280829",
   "strategies": {
     "momentum": {
@@ -10,7 +10,7 @@
       "realized": 8.22,
       "ev_per_trade": 0.257,
       "pnl_7d": -5.52,
-      "pnl_30d": 13.47,
+      "pnl_30d": 12.9,
       "recent": [
         {
           "coin": "SAND",
@@ -256,14 +256,14 @@
     }
   },
   "autopilot": {
-    "updated": "2026-10-03T03:19:44.136101+00:00",
-    "equity_at_allocation": 337.99,
+    "updated": "2026-10-03T03:35:39.774305+00:00",
+    "equity_at_allocation": 338.01,
     "peak_equity": 361.81,
     "drawdown_pct": 6.6,
     "governor": "normal",
     "governor_multiplier": 1.0,
     "projected_collateral": 61.65,
-    "budget_cap": 202.79,
+    "budget_cap": 202.8,
     "strategies": {
       "momentum": {
         "enabled": true,
