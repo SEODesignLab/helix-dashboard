@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-03T14:25:42.277133+00:00",
+  "generated": "2026-10-03T14:41:42.389173+00:00",
   "wallet": "0xfd9996E88C3878805aDDA44cb36D427655280829",
   "strategies": {
     "momentum": {
@@ -87,15 +87,21 @@
       ]
     },
     "dip": {
-      "trades": 74,
-      "open": 3,
-      "wins": 35,
-      "win_rate": 47.3,
-      "realized": 3.3,
-      "ev_per_trade": 0.045,
-      "pnl_7d": -8.95,
-      "pnl_30d": -2.04,
+      "trades": 75,
+      "open": 2,
+      "wins": 36,
+      "win_rate": 48.0,
+      "realized": 4.47,
+      "ev_per_trade": 0.06,
+      "pnl_7d": -7.78,
+      "pnl_30d": -0.87,
       "recent": [
+        {
+          "coin": "TIA",
+          "pnl": 1.17,
+          "reason": "TP_HIT",
+          "when": "2026-10-03T14:33"
+        },
         {
           "coin": "PYTH",
           "pnl": 1.19,
@@ -161,12 +167,6 @@
           "pnl": 1.05,
           "reason": "TP_HIT",
           "when": "2026-10-02T13:41"
-        },
-        {
-          "coin": "CHIP",
-          "pnl": 0.69,
-          "reason": "TP_HIT",
-          "when": "2026-10-02T11:37"
         }
       ]
     },
@@ -256,14 +256,14 @@
     }
   },
   "autopilot": {
-    "updated": "2026-10-03T14:15:48.126813+00:00",
-    "equity_at_allocation": 338.05,
+    "updated": "2026-10-03T14:31:43.578144+00:00",
+    "equity_at_allocation": 338.71,
     "peak_equity": 361.81,
-    "drawdown_pct": 6.6,
+    "drawdown_pct": 6.4,
     "governor": "normal",
     "governor_multiplier": 1.0,
     "projected_collateral": 61.65,
-    "budget_cap": 202.83,
+    "budget_cap": 203.23,
     "strategies": {
       "momentum": {
         "enabled": true,
