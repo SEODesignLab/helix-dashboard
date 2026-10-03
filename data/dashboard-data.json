@@ -1,17 +1,23 @@
 {
-  "generated": "2026-10-03T00:17:36.100852+00:00",
+  "generated": "2026-10-03T00:33:36.214009+00:00",
   "wallet": "0xfd9996E88C3878805aDDA44cb36D427655280829",
   "strategies": {
     "momentum": {
-      "trades": 31,
-      "open": 1,
-      "wins": 16,
-      "win_rate": 51.6,
-      "realized": 7.75,
-      "ev_per_trade": 0.25,
-      "pnl_7d": -5.99,
-      "pnl_30d": 13.0,
+      "trades": 32,
+      "open": 0,
+      "wins": 17,
+      "win_rate": 53.1,
+      "realized": 8.22,
+      "ev_per_trade": 0.257,
+      "pnl_7d": -5.52,
+      "pnl_30d": 13.47,
       "recent": [
+        {
+          "coin": "SAND",
+          "pnl": 0.47,
+          "reason": "ON_CHAIN_GONE",
+          "when": "2026-10-03T00:24"
+        },
         {
           "coin": "ICP",
           "pnl": -0.68,
@@ -77,12 +83,6 @@
           "pnl": 3.32,
           "reason": "MAX_HOLD",
           "when": "2026-09-26T08:15"
-        },
-        {
-          "coin": "LTC",
-          "pnl": -4.08,
-          "reason": "SL_HIT",
-          "when": "2026-09-25T12:24"
         }
       ]
     },
@@ -256,14 +256,14 @@
     }
   },
   "autopilot": {
-    "updated": "2026-10-03T00:07:42.541414+00:00",
-    "equity_at_allocation": 335.95,
+    "updated": "2026-10-03T00:23:37.353297+00:00",
+    "equity_at_allocation": 337.34,
     "peak_equity": 361.81,
-    "drawdown_pct": 7.1,
+    "drawdown_pct": 6.8,
     "governor": "normal",
     "governor_multiplier": 1.0,
     "projected_collateral": 61.65,
-    "budget_cap": 201.57,
+    "budget_cap": 202.4,
     "strategies": {
       "momentum": {
         "enabled": true,
