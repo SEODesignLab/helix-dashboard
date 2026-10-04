@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-04T23:13:56.583146+00:00",
+  "generated": "2026-10-04T23:29:56.691697+00:00",
   "wallet": "0xfd9996E88C3878805aDDA44cb36D427655280829",
   "strategies": {
     "momentum": {
@@ -10,7 +10,7 @@
       "realized": 7.16,
       "ev_per_trade": 0.211,
       "pnl_7d": -3.71,
-      "pnl_30d": 3.27,
+      "pnl_30d": -0.76,
       "recent": [
         {
           "coin": "MERL",
@@ -256,14 +256,14 @@
     }
   },
   "autopilot": {
-    "updated": "2026-10-04T23:03:57.810976+00:00",
-    "equity_at_allocation": 340.67,
+    "updated": "2026-10-04T23:19:57.832701+00:00",
+    "equity_at_allocation": 340.79,
     "peak_equity": 361.81,
     "drawdown_pct": 5.8,
     "governor": "normal",
     "governor_multiplier": 1.0,
     "projected_collateral": 61.65,
-    "budget_cap": 204.4,
+    "budget_cap": 204.48,
     "strategies": {
       "momentum": {
         "enabled": true,
