@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-05T05:05:59.140465+00:00",
+  "generated": "2026-10-05T05:21:59.253966+00:00",
   "wallet": "0xfd9996E88C3878805aDDA44cb36D427655280829",
   "strategies": {
     "momentum": {
@@ -10,7 +10,7 @@
       "realized": 8.59,
       "ev_per_trade": 0.245,
       "pnl_7d": -2.97,
-      "pnl_30d": 0.67,
+      "pnl_30d": -2.37,
       "recent": [
         {
           "coin": "NIL",
@@ -94,7 +94,7 @@
       "realized": 5.56,
       "ev_per_trade": 0.072,
       "pnl_7d": -5.56,
-      "pnl_30d": -1.91,
+      "pnl_30d": -4.55,
       "recent": [
         {
           "coin": "KAS",
@@ -256,14 +256,14 @@
     }
   },
   "autopilot": {
-    "updated": "2026-10-05T04:56:00.329469+00:00",
-    "equity_at_allocation": 341.14,
+    "updated": "2026-10-05T05:12:10.134264+00:00",
+    "equity_at_allocation": 341.16,
     "peak_equity": 361.81,
     "drawdown_pct": 5.7,
     "governor": "normal",
     "governor_multiplier": 1.0,
     "projected_collateral": 61.65,
-    "budget_cap": 204.69,
+    "budget_cap": 204.7,
     "strategies": {
       "momentum": {
         "enabled": true,
