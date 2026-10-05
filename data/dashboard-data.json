@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-05T10:42:01.635532+00:00",
+  "generated": "2026-10-05T10:58:01.756206+00:00",
   "wallet": "0xfd9996E88C3878805aDDA44cb36D427655280829",
   "strategies": {
     "momentum": {
@@ -94,7 +94,7 @@
       "realized": 5.56,
       "ev_per_trade": 0.072,
       "pnl_7d": -5.56,
-      "pnl_30d": -5.92,
+      "pnl_30d": -7.88,
       "recent": [
         {
           "coin": "KAS",
@@ -256,14 +256,14 @@
     }
   },
   "autopilot": {
-    "updated": "2026-10-05T10:32:07.740446+00:00",
-    "equity_at_allocation": 343.04,
+    "updated": "2026-10-05T10:48:02.935986+00:00",
+    "equity_at_allocation": 343.36,
     "peak_equity": 361.81,
-    "drawdown_pct": 5.2,
+    "drawdown_pct": 5.1,
     "governor": "normal",
     "governor_multiplier": 1.0,
     "projected_collateral": 61.65,
-    "budget_cap": 205.83,
+    "budget_cap": 206.01,
     "strategies": {
       "momentum": {
         "enabled": true,
