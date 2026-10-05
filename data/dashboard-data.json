@@ -1,17 +1,23 @@
 {
-  "generated": "2026-10-05T16:34:04.202799+00:00",
+  "generated": "2026-10-05T16:50:04.321794+00:00",
   "wallet": "0xfd9996E88C3878805aDDA44cb36D427655280829",
   "strategies": {
     "momentum": {
-      "trades": 35,
-      "open": 1,
+      "trades": 36,
+      "open": 0,
       "wins": 18,
-      "win_rate": 51.4,
-      "realized": 8.59,
-      "ev_per_trade": 0.245,
-      "pnl_7d": -1.86,
-      "pnl_30d": -7.18,
+      "win_rate": 50.0,
+      "realized": 7.79,
+      "ev_per_trade": 0.216,
+      "pnl_7d": -2.66,
+      "pnl_30d": -7.98,
       "recent": [
+        {
+          "coin": "FET",
+          "pnl": -0.8,
+          "reason": "ON_CHAIN_GONE",
+          "when": "2026-10-05T16:41"
+        },
         {
           "coin": "NIL",
           "pnl": 1.43,
@@ -77,25 +83,25 @@
           "pnl": -1.05,
           "reason": "SL_HIT",
           "when": "2026-09-28T03:26"
-        },
-        {
-          "coin": "PURR",
-          "pnl": 1.74,
-          "reason": "TP_HIT",
-          "when": "2026-09-28T00:17"
         }
       ]
     },
     "dip": {
-      "trades": 78,
-      "open": 4,
+      "trades": 79,
+      "open": 3,
       "wins": 38,
-      "win_rate": 48.7,
-      "realized": 4.85,
-      "ev_per_trade": 0.062,
-      "pnl_7d": -6.28,
-      "pnl_30d": -8.6,
+      "win_rate": 48.1,
+      "realized": 4.03,
+      "ev_per_trade": 0.051,
+      "pnl_7d": -7.1,
+      "pnl_30d": -9.42,
       "recent": [
+        {
+          "coin": "PONS",
+          "pnl": -0.82,
+          "reason": "SL_HIT",
+          "when": "2026-10-05T16:34"
+        },
         {
           "coin": "2Z",
           "pnl": -0.72,
@@ -159,12 +165,6 @@
         {
           "coin": "JTO",
           "pnl": -1.05,
-          "reason": "SL_HIT",
-          "when": "2026-10-02T18:36"
-        },
-        {
-          "coin": "LIT",
-          "pnl": -1.17,
           "reason": "SL_HIT",
           "when": "2026-10-02T18:36"
         }
@@ -256,8 +256,8 @@
     }
   },
   "autopilot": {
-    "updated": "2026-10-05T16:24:10.681505+00:00",
-    "equity_at_allocation": 338.92,
+    "updated": "2026-10-05T16:40:05.472564+00:00",
+    "equity_at_allocation": 338.91,
     "peak_equity": 361.81,
     "drawdown_pct": 6.3,
     "governor": "normal",
@@ -282,12 +282,12 @@
         "collateral": 5.12,
         "effective_collateral": 5.12,
         "max_open": 2,
-        "win_rate": 48.7,
-        "ev_per_trade": 0.062,
-        "trades": 78,
-        "rolling_pnl_7d": -6.28,
-        "score": -4.497,
-        "reason": "steady: EV $+0.06 WR 49%"
+        "win_rate": 48.1,
+        "ev_per_trade": 0.051,
+        "trades": 79,
+        "rolling_pnl_7d": -7.1,
+        "score": -5.125,
+        "reason": "steady: EV $+0.05 WR 48%"
       },
       "copy": {
         "enabled": true,
