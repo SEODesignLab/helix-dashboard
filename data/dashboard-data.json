@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-05T19:30:05.575796+00:00",
+  "generated": "2026-10-05T19:46:05.691679+00:00",
   "wallet": "0xfd9996E88C3878805aDDA44cb36D427655280829",
   "strategies": {
     "momentum": {
@@ -87,15 +87,21 @@
       ]
     },
     "dip": {
-      "trades": 79,
-      "open": 3,
-      "wins": 38,
-      "win_rate": 48.1,
-      "realized": 4.03,
-      "ev_per_trade": 0.051,
-      "pnl_7d": -7.1,
-      "pnl_30d": -7.21,
+      "trades": 80,
+      "open": 2,
+      "wins": 39,
+      "win_rate": 48.8,
+      "realized": 5.66,
+      "ev_per_trade": 0.071,
+      "pnl_7d": -5.47,
+      "pnl_30d": -5.58,
       "recent": [
+        {
+          "coin": "LIT",
+          "pnl": 1.63,
+          "reason": "MAX_HOLD_TIMEOUT",
+          "when": "2026-10-05T19:35"
+        },
         {
           "coin": "PONS",
           "pnl": -0.82,
@@ -159,12 +165,6 @@
         {
           "coin": "MET",
           "pnl": -1.03,
-          "reason": "SL_HIT",
-          "when": "2026-10-02T18:36"
-        },
-        {
-          "coin": "JTO",
-          "pnl": -1.05,
           "reason": "SL_HIT",
           "when": "2026-10-02T18:36"
         }
@@ -256,14 +256,14 @@
     }
   },
   "autopilot": {
-    "updated": "2026-10-05T19:20:07.810126+00:00",
-    "equity_at_allocation": 340.27,
+    "updated": "2026-10-05T19:36:11.863089+00:00",
+    "equity_at_allocation": 340.78,
     "peak_equity": 361.81,
-    "drawdown_pct": 6.0,
+    "drawdown_pct": 5.8,
     "governor": "normal",
     "governor_multiplier": 1.0,
     "projected_collateral": 61.65,
-    "budget_cap": 204.16,
+    "budget_cap": 204.47,
     "strategies": {
       "momentum": {
         "enabled": true,
@@ -282,12 +282,12 @@
         "collateral": 5.12,
         "effective_collateral": 5.12,
         "max_open": 2,
-        "win_rate": 48.1,
-        "ev_per_trade": 0.051,
-        "trades": 79,
-        "rolling_pnl_7d": -7.1,
-        "score": -5.125,
-        "reason": "steady: EV $+0.05 WR 48%"
+        "win_rate": 48.8,
+        "ev_per_trade": 0.071,
+        "trades": 80,
+        "rolling_pnl_7d": -5.47,
+        "score": -3.878,
+        "reason": "steady: EV $+0.07 WR 49%"
       },
       "copy": {
         "enabled": true,
