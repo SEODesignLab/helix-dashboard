@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-06T02:58:08.824701+00:00",
+  "generated": "2026-10-06T03:14:08.937870+00:00",
   "wallet": "0xfd9996E88C3878805aDDA44cb36D427655280829",
   "strategies": {
     "momentum": {
@@ -87,15 +87,21 @@
       ]
     },
     "dip": {
-      "trades": 80,
-      "open": 3,
-      "wins": 39,
-      "win_rate": 48.8,
-      "realized": 5.66,
-      "ev_per_trade": 0.071,
-      "pnl_7d": -5.47,
-      "pnl_30d": -5.58,
+      "trades": 81,
+      "open": 2,
+      "wins": 40,
+      "win_rate": 49.4,
+      "realized": 5.9,
+      "ev_per_trade": 0.073,
+      "pnl_7d": -5.22,
+      "pnl_30d": -5.34,
       "recent": [
+        {
+          "coin": "APEX",
+          "pnl": 0.24,
+          "reason": "MAX_HOLD_TIMEOUT",
+          "when": "2026-10-06T03:08"
+        },
         {
           "coin": "LIT",
           "pnl": 1.63,
@@ -161,12 +167,6 @@
           "pnl": -0.74,
           "reason": "SL_HIT",
           "when": "2026-10-02T18:47"
-        },
-        {
-          "coin": "MET",
-          "pnl": -1.03,
-          "reason": "SL_HIT",
-          "when": "2026-10-02T18:36"
         }
       ]
     },
@@ -256,14 +256,14 @@
     }
   },
   "autopilot": {
-    "updated": "2026-10-06T02:48:14.965177+00:00",
-    "equity_at_allocation": 338.32,
+    "updated": "2026-10-06T03:04:10.132261+00:00",
+    "equity_at_allocation": 338.58,
     "peak_equity": 361.81,
-    "drawdown_pct": 6.5,
+    "drawdown_pct": 6.4,
     "governor": "normal",
     "governor_multiplier": 1.0,
     "projected_collateral": 61.65,
-    "budget_cap": 202.99,
+    "budget_cap": 203.15,
     "strategies": {
       "momentum": {
         "enabled": true,
