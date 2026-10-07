@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-07T01:54:18.923702+00:00",
+  "generated": "2026-10-07T02:10:19.054749+00:00",
   "wallet": "0xfd9996E88C3878805aDDA44cb36D427655280829",
   "strategies": {
     "momentum": {
@@ -87,15 +87,27 @@
       ]
     },
     "dip": {
-      "trades": 81,
-      "open": 2,
+      "trades": 83,
+      "open": 1,
       "wins": 40,
-      "win_rate": 49.4,
-      "realized": 5.9,
-      "ev_per_trade": 0.073,
-      "pnl_7d": -2.11,
-      "pnl_30d": -5.34,
+      "win_rate": 48.2,
+      "realized": 3.3,
+      "ev_per_trade": 0.04,
+      "pnl_7d": -4.71,
+      "pnl_30d": -7.94,
       "recent": [
+        {
+          "coin": "REZ",
+          "pnl": -1.47,
+          "reason": "SL_HIT",
+          "when": "2026-10-07T01:59"
+        },
+        {
+          "coin": "FOGO",
+          "pnl": -1.13,
+          "reason": "SL_HIT",
+          "when": "2026-10-07T01:59"
+        },
         {
           "coin": "APEX",
           "pnl": 0.24,
@@ -155,31 +167,25 @@
           "pnl": -0.69,
           "reason": "SL_HIT",
           "when": "2026-10-02T18:47"
-        },
-        {
-          "coin": "XPL",
-          "pnl": -0.69,
-          "reason": "SL_HIT",
-          "when": "2026-10-02T18:47"
-        },
-        {
-          "coin": "ZORA",
-          "pnl": -0.74,
-          "reason": "SL_HIT",
-          "when": "2026-10-02T18:47"
         }
       ]
     },
     "copy": {
-      "trades": 26,
-      "open": 3,
+      "trades": 27,
+      "open": 2,
       "wins": 12,
-      "win_rate": 46.2,
-      "realized": 2.82,
-      "ev_per_trade": 0.109,
-      "pnl_7d": 1.67,
-      "pnl_30d": -0.07,
+      "win_rate": 44.4,
+      "realized": 2.16,
+      "ev_per_trade": 0.08,
+      "pnl_7d": 1.01,
+      "pnl_30d": -0.74,
       "recent": [
+        {
+          "coin": "ETH",
+          "pnl": -0.66,
+          "reason": "SL_HIT",
+          "when": "2026-10-07T02:04"
+        },
         {
           "coin": "NEAR",
           "pnl": 1.67,
@@ -245,49 +251,43 @@
           "pnl": -2.31,
           "reason": "MAX_HOLD",
           "when": "2026-09-18T09:54"
-        },
-        {
-          "coin": "HYPE",
-          "pnl": -0.67,
-          "reason": "SL_HIT",
-          "when": "2026-09-18T01:01"
         }
       ]
     }
   },
   "autopilot": {
-    "updated": "2026-10-07T01:44:20.055457+00:00",
-    "equity_at_allocation": 335.14,
+    "updated": "2026-10-07T02:00:23.681129+00:00",
+    "equity_at_allocation": 330.52,
     "peak_equity": 361.81,
-    "drawdown_pct": 7.4,
+    "drawdown_pct": 8.6,
     "governor": "normal",
     "governor_multiplier": 1.0,
-    "projected_collateral": 61.65,
-    "budget_cap": 201.09,
+    "projected_collateral": 60.57,
+    "budget_cap": 198.31,
     "strategies": {
       "momentum": {
         "enabled": true,
-        "collateral": 5.5,
-        "effective_collateral": 5.5,
+        "collateral": 4.96,
+        "effective_collateral": 4.96,
         "max_open": 2,
         "win_rate": 50.0,
         "ev_per_trade": 0.269,
         "trades": 38,
         "rolling_pnl_7d": 1.79,
         "score": -0.772,
-        "reason": "steady: EV $+0.27 WR 50%"
+        "reason": "EV $+0.27 WR 50% 7d $+1.79 -> $6 to $5"
       },
       "dip": {
         "enabled": true,
         "collateral": 5.12,
         "effective_collateral": 5.12,
         "max_open": 2,
-        "win_rate": 49.4,
-        "ev_per_trade": 0.073,
-        "trades": 81,
-        "rolling_pnl_7d": -2.11,
-        "score": -2.135,
-        "reason": "steady: EV $+0.07 WR 49%"
+        "win_rate": 48.2,
+        "ev_per_trade": 0.04,
+        "trades": 83,
+        "rolling_pnl_7d": -4.71,
+        "score": -4.126,
+        "reason": "steady: EV $+0.04 WR 48%"
       },
       "copy": {
         "enabled": true,
