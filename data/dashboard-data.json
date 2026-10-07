@@ -1,17 +1,23 @@
 {
-  "generated": "2026-10-07T08:02:21.891465+00:00",
+  "generated": "2026-10-07T08:18:22.003440+00:00",
   "wallet": "0xfd9996E88C3878805aDDA44cb36D427655280829",
   "strategies": {
     "momentum": {
-      "trades": 38,
-      "open": 1,
+      "trades": 39,
+      "open": 0,
       "wins": 19,
-      "win_rate": 50.0,
-      "realized": 10.22,
-      "ev_per_trade": 0.269,
-      "pnl_7d": 1.79,
-      "pnl_30d": -5.39,
+      "win_rate": 48.7,
+      "realized": 9.25,
+      "ev_per_trade": 0.237,
+      "pnl_7d": 0.82,
+      "pnl_30d": -6.36,
       "recent": [
+        {
+          "coin": "RESOLV",
+          "pnl": -0.97,
+          "reason": "SL_HIT",
+          "when": "2026-10-07T08:02"
+        },
         {
           "coin": "GRIFFAIN",
           "pnl": 3.26,
@@ -77,12 +83,6 @@
           "pnl": -1.08,
           "reason": "SL_HIT",
           "when": "2026-09-29T12:48"
-        },
-        {
-          "coin": "ALGO",
-          "pnl": -0.99,
-          "reason": "SL_HIT",
-          "when": "2026-09-29T07:39"
         }
       ]
     },
@@ -256,14 +256,14 @@
     }
   },
   "autopilot": {
-    "updated": "2026-10-07T07:52:33.022343+00:00",
-    "equity_at_allocation": 331.33,
+    "updated": "2026-10-07T08:08:29.558857+00:00",
+    "equity_at_allocation": 331.14,
     "peak_equity": 361.81,
-    "drawdown_pct": 8.4,
+    "drawdown_pct": 8.5,
     "governor": "normal",
     "governor_multiplier": 1.0,
     "projected_collateral": 35.07,
-    "budget_cap": 198.8,
+    "budget_cap": 198.68,
     "strategies": {
       "momentum": {
         "enabled": true,
