@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-08T17:22:37.150512+00:00",
+  "generated": "2026-10-08T17:38:37.266258+00:00",
   "wallet": "0xfd9996E88C3878805aDDA44cb36D427655280829",
   "strategies": {
     "momentum": {
@@ -87,15 +87,21 @@
       ]
     },
     "dip": {
-      "trades": 84,
-      "open": 3,
+      "trades": 85,
+      "open": 2,
       "wins": 41,
-      "win_rate": 48.8,
-      "realized": 3.5,
-      "ev_per_trade": 0.042,
-      "pnl_7d": -1.72,
-      "pnl_30d": -7.99,
+      "win_rate": 48.2,
+      "realized": 2.6,
+      "ev_per_trade": 0.031,
+      "pnl_7d": -2.63,
+      "pnl_30d": -8.9,
       "recent": [
+        {
+          "coin": "XPL",
+          "pnl": -0.91,
+          "reason": "SL_HIT",
+          "when": "2026-10-08T17:22"
+        },
         {
           "coin": "PONS",
           "pnl": 0.2,
@@ -161,12 +167,6 @@
           "pnl": 1.19,
           "reason": "TP_HIT",
           "when": "2026-10-03T00:39"
-        },
-        {
-          "coin": "NIL",
-          "pnl": -0.62,
-          "reason": "MAX_HOLD_TIMEOUT",
-          "when": "2026-10-02T22:12"
         }
       ]
     },
@@ -256,14 +256,14 @@
     }
   },
   "autopilot": {
-    "updated": "2026-10-08T17:12:42.514646+00:00",
-    "equity_at_allocation": 319.43,
+    "updated": "2026-10-08T17:28:38.421989+00:00",
+    "equity_at_allocation": 318.66,
     "peak_equity": 361.81,
-    "drawdown_pct": 11.7,
+    "drawdown_pct": 11.9,
     "governor": "caution",
     "governor_multiplier": 0.7,
     "projected_collateral": 35.07,
-    "budget_cap": 191.66,
+    "budget_cap": 191.2,
     "strategies": {
       "momentum": {
         "enabled": true,
@@ -282,12 +282,12 @@
         "collateral": 5.12,
         "effective_collateral": 4.0,
         "max_open": 2,
-        "win_rate": 48.8,
-        "ev_per_trade": 0.042,
-        "trades": 84,
-        "rolling_pnl_7d": -1.72,
-        "score": -2.578,
-        "reason": "steady: EV $+0.04 WR 49%"
+        "win_rate": 48.2,
+        "ev_per_trade": 0.031,
+        "trades": 85,
+        "rolling_pnl_7d": -2.63,
+        "score": -3.271,
+        "reason": "steady: EV $+0.03 WR 48%"
       },
       "copy": {
         "enabled": true,
@@ -395,7 +395,7 @@
       "support": 0.33
     },
     "ETH": {
-      "phase": "TESTING_SUPPORT",
+      "phase": "BREAKDOWN_WATCH",
       "signals": 5,
       "executed": 0,
       "support": 2421.29
