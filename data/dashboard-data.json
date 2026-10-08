@@ -1,17 +1,23 @@
 {
-  "generated": "2026-10-08T11:46:34.535595+00:00",
+  "generated": "2026-10-08T12:02:34.655971+00:00",
   "wallet": "0xfd9996E88C3878805aDDA44cb36D427655280829",
   "strategies": {
     "momentum": {
-      "trades": 43,
-      "open": 1,
+      "trades": 44,
+      "open": 0,
       "wins": 20,
-      "win_rate": 46.5,
-      "realized": 8.28,
-      "ev_per_trade": 0.193,
-      "pnl_7d": 0.53,
-      "pnl_30d": -7.33,
+      "win_rate": 45.5,
+      "realized": 7.45,
+      "ev_per_trade": 0.169,
+      "pnl_7d": -0.3,
+      "pnl_30d": -8.16,
       "recent": [
+        {
+          "coin": "ACE",
+          "pnl": -0.83,
+          "reason": "SL_HIT",
+          "when": "2026-10-08T11:43"
+        },
         {
           "coin": "W",
           "pnl": -0.84,
@@ -77,12 +83,6 @@
           "pnl": -1.01,
           "reason": "SL_HIT",
           "when": "2026-10-04T04:46"
-        },
-        {
-          "coin": "SAND",
-          "pnl": 0.47,
-          "reason": "ON_CHAIN_GONE",
-          "when": "2026-10-03T00:24"
         }
       ]
     },
@@ -256,26 +256,26 @@
     }
   },
   "autopilot": {
-    "updated": "2026-10-08T11:36:40.501329+00:00",
-    "equity_at_allocation": 323.94,
+    "updated": "2026-10-08T11:52:38.824134+00:00",
+    "equity_at_allocation": 323.82,
     "peak_equity": 361.81,
     "drawdown_pct": 10.5,
     "governor": "caution",
     "governor_multiplier": 0.7,
     "projected_collateral": 35.07,
-    "budget_cap": 194.36,
+    "budget_cap": 194.29,
     "strategies": {
       "momentum": {
         "enabled": true,
         "collateral": 4.96,
         "effective_collateral": 4.0,
         "max_open": 2,
-        "win_rate": 46.5,
-        "ev_per_trade": 0.193,
-        "trades": 43,
-        "rolling_pnl_7d": 0.53,
-        "score": -4.486,
-        "reason": "steady: EV $+0.19 WR 46%"
+        "win_rate": 45.5,
+        "ev_per_trade": 0.169,
+        "trades": 44,
+        "rolling_pnl_7d": -0.3,
+        "score": -5.142,
+        "reason": "steady: EV $+0.17 WR 46%"
       },
       "dip": {
         "enabled": true,
