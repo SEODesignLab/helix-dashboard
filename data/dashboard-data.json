@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-08T12:50:35.008090+00:00",
+  "generated": "2026-10-08T13:06:35.133982+00:00",
   "wallet": "0xfd9996E88C3878805aDDA44cb36D427655280829",
   "strategies": {
     "momentum": {
@@ -171,15 +171,21 @@
       ]
     },
     "copy": {
-      "trades": 27,
-      "open": 2,
+      "trades": 28,
+      "open": 1,
       "wins": 12,
-      "win_rate": 44.4,
-      "realized": 2.16,
-      "ev_per_trade": 0.08,
-      "pnl_7d": -0.66,
-      "pnl_30d": -0.74,
+      "win_rate": 42.9,
+      "realized": 1.57,
+      "ev_per_trade": 0.056,
+      "pnl_7d": -1.25,
+      "pnl_30d": -1.33,
       "recent": [
+        {
+          "coin": "SOL",
+          "pnl": -0.59,
+          "reason": "SL_HIT",
+          "when": "2026-10-08T12:50"
+        },
         {
           "coin": "ETH",
           "pnl": -0.66,
@@ -245,25 +251,19 @@
           "pnl": 1.16,
           "reason": "TP_HIT",
           "when": "2026-09-18T13:45"
-        },
-        {
-          "coin": "ZEC",
-          "pnl": -2.31,
-          "reason": "MAX_HOLD",
-          "when": "2026-09-18T09:54"
         }
       ]
     }
   },
   "autopilot": {
-    "updated": "2026-10-08T12:40:43.188825+00:00",
-    "equity_at_allocation": 323.27,
+    "updated": "2026-10-08T12:56:36.562971+00:00",
+    "equity_at_allocation": 323.03,
     "peak_equity": 361.81,
     "drawdown_pct": 10.7,
     "governor": "caution",
     "governor_multiplier": 0.7,
     "projected_collateral": 35.07,
-    "budget_cap": 193.96,
+    "budget_cap": 193.82,
     "strategies": {
       "momentum": {
         "enabled": true,
@@ -294,12 +294,12 @@
         "collateral": 4.97,
         "effective_collateral": 4.0,
         "max_open": 3,
-        "win_rate": 44.4,
-        "ev_per_trade": 0.08,
-        "trades": 27,
-        "rolling_pnl_7d": -0.66,
-        "score": 0.152,
-        "reason": "steady: EV $+0.08 WR 44%"
+        "win_rate": 42.9,
+        "ev_per_trade": 0.056,
+        "trades": 28,
+        "rolling_pnl_7d": -1.25,
+        "score": -0.319,
+        "reason": "steady: EV $+0.06 WR 43%"
       },
       "v4": {
         "enabled": true,
