@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-09T22:42:50.701671+00:00",
+  "generated": "2026-10-09T22:58:50.812499+00:00",
   "wallet": "0xfd9996E88C3878805aDDA44cb36D427655280829",
   "strategies": {
     "momentum": {
@@ -178,7 +178,7 @@
       "realized": 2.14,
       "ev_per_trade": 0.071,
       "pnl_7d": -0.68,
-      "pnl_30d": -0.75,
+      "pnl_30d": -0.08,
       "recent": [
         {
           "coin": "kNEIRO",
@@ -256,14 +256,14 @@
     }
   },
   "autopilot": {
-    "updated": "2026-10-09T22:32:53.957876+00:00",
-    "equity_at_allocation": 323.73,
+    "updated": "2026-10-09T22:48:59.165971+00:00",
+    "equity_at_allocation": 324.01,
     "peak_equity": 361.81,
-    "drawdown_pct": 10.5,
+    "drawdown_pct": 10.4,
     "governor": "caution",
     "governor_multiplier": 0.7,
     "projected_collateral": 35.07,
-    "budget_cap": 194.24,
+    "budget_cap": 194.41,
     "strategies": {
       "momentum": {
         "enabled": true,
@@ -294,12 +294,12 @@
         "collateral": 4.97,
         "effective_collateral": 4.0,
         "max_open": 3,
-        "win_rate": 44.8,
-        "ev_per_trade": 0.058,
-        "trades": 29,
-        "rolling_pnl_7d": -1.14,
-        "score": -0.63,
-        "reason": "steady: EV $+0.06 WR 45%"
+        "win_rate": 46.7,
+        "ev_per_trade": 0.071,
+        "trades": 30,
+        "rolling_pnl_7d": -0.68,
+        "score": -0.268,
+        "reason": "steady: EV $+0.07 WR 47%"
       },
       "v4": {
         "enabled": true,
