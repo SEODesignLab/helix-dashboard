@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-09T07:30:43.637154+00:00",
+  "generated": "2026-10-09T07:46:43.763095+00:00",
   "wallet": "0xfd9996E88C3878805aDDA44cb36D427655280829",
   "strategies": {
     "momentum": {
@@ -87,15 +87,21 @@
       ]
     },
     "dip": {
-      "trades": 85,
-      "open": 3,
-      "wins": 41,
-      "win_rate": 48.2,
-      "realized": 2.6,
-      "ev_per_trade": 0.031,
-      "pnl_7d": -5.42,
-      "pnl_30d": -8.9,
+      "trades": 86,
+      "open": 2,
+      "wins": 42,
+      "win_rate": 48.8,
+      "realized": 3.18,
+      "ev_per_trade": 0.037,
+      "pnl_7d": -4.84,
+      "pnl_30d": -8.32,
       "recent": [
+        {
+          "coin": "JTO",
+          "pnl": 0.58,
+          "reason": "TP_HIT",
+          "when": "2026-10-09T07:41"
+        },
         {
           "coin": "XPL",
           "pnl": -0.91,
@@ -161,12 +167,6 @@
           "pnl": 1.17,
           "reason": "TP_HIT",
           "when": "2026-10-03T14:33"
-        },
-        {
-          "coin": "PYTH",
-          "pnl": 1.19,
-          "reason": "TP_HIT",
-          "when": "2026-10-03T00:39"
         }
       ]
     },
@@ -256,14 +256,14 @@
     }
   },
   "autopilot": {
-    "updated": "2026-10-09T07:20:54.217782+00:00",
-    "equity_at_allocation": 323.11,
+    "updated": "2026-10-09T07:36:45.898084+00:00",
+    "equity_at_allocation": 322.97,
     "peak_equity": 361.81,
     "drawdown_pct": 10.7,
     "governor": "caution",
     "governor_multiplier": 0.7,
     "projected_collateral": 35.07,
-    "budget_cap": 193.86,
+    "budget_cap": 193.78,
     "strategies": {
       "momentum": {
         "enabled": true,
