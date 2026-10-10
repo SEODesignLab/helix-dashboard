@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-10T22:59:01.897908+00:00",
+  "generated": "2026-10-10T23:15:02.023179+00:00",
   "wallet": "0xfd9996E88C3878805aDDA44cb36D427655280829",
   "strategies": {
     "momentum": {
@@ -94,7 +94,7 @@
       "realized": 6.09,
       "ev_per_trade": 0.066,
       "pnl_7d": 1.62,
-      "pnl_30d": -5.41,
+      "pnl_30d": -4.48,
       "recent": [
         {
           "coin": "JTO",
@@ -256,14 +256,14 @@
     }
   },
   "autopilot": {
-    "updated": "2026-10-10T22:49:03.036556+00:00",
-    "equity_at_allocation": 327.7,
+    "updated": "2026-10-10T23:05:03.185041+00:00",
+    "equity_at_allocation": 328.29,
     "peak_equity": 361.81,
-    "drawdown_pct": 9.4,
+    "drawdown_pct": 9.3,
     "governor": "normal",
     "governor_multiplier": 1.0,
     "projected_collateral": 35.07,
-    "budget_cap": 196.62,
+    "budget_cap": 196.97,
     "strategies": {
       "momentum": {
         "enabled": true,
