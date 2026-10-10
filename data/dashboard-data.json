@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-10T12:50:57.240881+00:00",
+  "generated": "2026-10-10T13:06:57.363375+00:00",
   "wallet": "0xfd9996E88C3878805aDDA44cb36D427655280829",
   "strategies": {
     "momentum": {
@@ -178,7 +178,7 @@
       "realized": 2.14,
       "ev_per_trade": 0.071,
       "pnl_7d": -0.68,
-      "pnl_30d": -0.08,
+      "pnl_30d": 0.48,
       "recent": [
         {
           "coin": "kNEIRO",
@@ -256,14 +256,14 @@
     }
   },
   "autopilot": {
-    "updated": "2026-10-10T12:41:01.707727+00:00",
-    "equity_at_allocation": 326.78,
+    "updated": "2026-10-10T12:56:58.593912+00:00",
+    "equity_at_allocation": 326.67,
     "peak_equity": 361.81,
     "drawdown_pct": 9.7,
     "governor": "normal",
     "governor_multiplier": 1.0,
     "projected_collateral": 35.07,
-    "budget_cap": 196.07,
+    "budget_cap": 196.0,
     "strategies": {
       "momentum": {
         "enabled": true,
