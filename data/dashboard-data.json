@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-10T00:18:51.448625+00:00",
+  "generated": "2026-10-10T00:34:51.577007+00:00",
   "wallet": "0xfd9996E88C3878805aDDA44cb36D427655280829",
   "strategies": {
     "momentum": {
@@ -9,7 +9,7 @@
       "win_rate": 44.7,
       "realized": 5.57,
       "ev_per_trade": 0.118,
-      "pnl_7d": -2.18,
+      "pnl_7d": -2.65,
       "pnl_30d": -10.04,
       "recent": [
         {
@@ -87,15 +87,21 @@
       ]
     },
     "dip": {
-      "trades": 87,
-      "open": 16,
-      "wins": 43,
-      "win_rate": 49.4,
-      "realized": 3.67,
-      "ev_per_trade": 0.042,
-      "pnl_7d": 1.56,
-      "pnl_30d": -7.82,
+      "trades": 88,
+      "open": 15,
+      "wins": 44,
+      "win_rate": 50.0,
+      "realized": 4.32,
+      "ev_per_trade": 0.049,
+      "pnl_7d": 2.2,
+      "pnl_30d": -7.17,
       "recent": [
+        {
+          "coin": "PEOPLE",
+          "pnl": 0.65,
+          "reason": "TP_HIT",
+          "when": "2026-10-10T00:29"
+        },
         {
           "coin": "ZK",
           "pnl": 0.5,
@@ -161,12 +167,6 @@
           "pnl": 0.28,
           "reason": "MAX_HOLD_TIMEOUT",
           "when": "2026-10-04T20:19"
-        },
-        {
-          "coin": "SEI",
-          "pnl": 0.81,
-          "reason": "TP_HIT",
-          "when": "2026-10-04T15:01"
         }
       ]
     },
@@ -256,14 +256,14 @@
     }
   },
   "autopilot": {
-    "updated": "2026-10-10T00:09:00.981592+00:00",
-    "equity_at_allocation": 325.95,
+    "updated": "2026-10-10T00:24:52.763440+00:00",
+    "equity_at_allocation": 326.57,
     "peak_equity": 361.81,
-    "drawdown_pct": 9.9,
+    "drawdown_pct": 9.7,
     "governor": "normal",
     "governor_multiplier": 1.0,
     "projected_collateral": 35.07,
-    "budget_cap": 195.57,
+    "budget_cap": 195.94,
     "strategies": {
       "momentum": {
         "enabled": true,
@@ -273,8 +273,8 @@
         "win_rate": 44.7,
         "ev_per_trade": 0.118,
         "trades": 47,
-        "rolling_pnl_7d": -2.18,
-        "score": -2.996,
+        "rolling_pnl_7d": -2.65,
+        "score": -3.231,
         "reason": "steady: EV $+0.12 WR 45%"
       },
       "dip": {
