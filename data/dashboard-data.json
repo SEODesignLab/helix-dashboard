@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-10T02:42:52.547252+00:00",
+  "generated": "2026-10-10T02:58:52.665683+00:00",
   "wallet": "0xfd9996E88C3878805aDDA44cb36D427655280829",
   "strategies": {
     "momentum": {
@@ -87,15 +87,21 @@
       ]
     },
     "dip": {
-      "trades": 89,
-      "open": 14,
-      "wins": 45,
-      "win_rate": 50.6,
-      "realized": 4.96,
-      "ev_per_trade": 0.056,
-      "pnl_7d": 1.66,
-      "pnl_30d": -6.53,
+      "trades": 90,
+      "open": 13,
+      "wins": 46,
+      "win_rate": 51.1,
+      "realized": 5.56,
+      "ev_per_trade": 0.062,
+      "pnl_7d": 2.25,
+      "pnl_30d": -5.94,
       "recent": [
+        {
+          "coin": "RSR",
+          "pnl": 0.6,
+          "reason": "TP_HIT",
+          "when": "2026-10-10T02:45"
+        },
         {
           "coin": "AIXBT",
           "pnl": 0.64,
@@ -161,12 +167,6 @@
           "pnl": -0.82,
           "reason": "SL_HIT",
           "when": "2026-10-05T16:34"
-        },
-        {
-          "coin": "2Z",
-          "pnl": -0.72,
-          "reason": "SL_HIT",
-          "when": "2026-10-05T14:36"
         }
       ]
     },
@@ -256,14 +256,14 @@
     }
   },
   "autopilot": {
-    "updated": "2026-10-10T02:33:01.833421+00:00",
-    "equity_at_allocation": 327.14,
+    "updated": "2026-10-10T02:48:57.312951+00:00",
+    "equity_at_allocation": 327.51,
     "peak_equity": 361.81,
-    "drawdown_pct": 9.6,
+    "drawdown_pct": 9.5,
     "governor": "normal",
     "governor_multiplier": 1.0,
     "projected_collateral": 35.07,
-    "budget_cap": 196.28,
+    "budget_cap": 196.51,
     "strategies": {
       "momentum": {
         "enabled": true,
@@ -282,11 +282,11 @@
         "collateral": 5.12,
         "effective_collateral": 5.12,
         "max_open": 2,
-        "win_rate": 50.6,
-        "ev_per_trade": 0.056,
-        "trades": 89,
-        "rolling_pnl_7d": 1.66,
-        "score": -0.925,
+        "win_rate": 51.1,
+        "ev_per_trade": 0.062,
+        "trades": 90,
+        "rolling_pnl_7d": 2.25,
+        "score": -0.472,
         "reason": "steady: EV $+0.06 WR 51%"
       },
       "copy": {
