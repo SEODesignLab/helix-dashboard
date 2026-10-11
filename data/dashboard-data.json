@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-11T16:03:09.809303+00:00",
+  "generated": "2026-10-11T16:19:09.928592+00:00",
   "wallet": "0xfd9996E88C3878805aDDA44cb36D427655280829",
   "strategies": {
     "momentum": {
@@ -87,15 +87,27 @@
       ]
     },
     "dip": {
-      "trades": 95,
-      "open": 11,
-      "wins": 50,
-      "win_rate": 52.6,
-      "realized": 8.08,
-      "ev_per_trade": 0.085,
-      "pnl_7d": 2.8,
-      "pnl_30d": -2.49,
+      "trades": 97,
+      "open": 9,
+      "wins": 52,
+      "win_rate": 53.6,
+      "realized": 9.48,
+      "ev_per_trade": 0.098,
+      "pnl_7d": 4.2,
+      "pnl_30d": -1.08,
       "recent": [
+        {
+          "coin": "FARTCOIN",
+          "pnl": 0.59,
+          "reason": "TP_HIT",
+          "when": "2026-10-11T16:12"
+        },
+        {
+          "coin": "MOVE",
+          "pnl": 0.82,
+          "reason": "TP_HIT",
+          "when": "2026-10-11T16:12"
+        },
         {
           "coin": "XLM",
           "pnl": 0.63,
@@ -155,18 +167,6 @@
           "pnl": 0.58,
           "reason": "TP_HIT",
           "when": "2026-10-09T07:41"
-        },
-        {
-          "coin": "XPL",
-          "pnl": -0.91,
-          "reason": "SL_HIT",
-          "when": "2026-10-08T17:22"
-        },
-        {
-          "coin": "PONS",
-          "pnl": 0.2,
-          "reason": "MAX_HOLD_TIMEOUT",
-          "when": "2026-10-08T14:11"
         }
       ]
     },
@@ -256,14 +256,14 @@
     }
   },
   "autopilot": {
-    "updated": "2026-10-11T15:53:13.665892+00:00",
-    "equity_at_allocation": 334.41,
+    "updated": "2026-10-11T16:09:11.101629+00:00",
+    "equity_at_allocation": 336.24,
     "peak_equity": 361.81,
-    "drawdown_pct": 7.6,
+    "drawdown_pct": 7.1,
     "governor": "normal",
     "governor_multiplier": 1.0,
     "projected_collateral": 35.07,
-    "budget_cap": 200.65,
+    "budget_cap": 201.75,
     "strategies": {
       "momentum": {
         "enabled": true,
