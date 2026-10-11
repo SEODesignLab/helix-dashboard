@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-11T23:31:13.254073+00:00",
+  "generated": "2026-10-11T23:47:13.374466+00:00",
   "wallet": "0xfd9996E88C3878805aDDA44cb36D427655280829",
   "strategies": {
     "momentum": {
@@ -87,15 +87,21 @@
       ]
     },
     "dip": {
-      "trades": 97,
-      "open": 9,
-      "wins": 52,
-      "win_rate": 53.6,
-      "realized": 9.48,
-      "ev_per_trade": 0.098,
-      "pnl_7d": 3.92,
-      "pnl_30d": -1.08,
+      "trades": 98,
+      "open": 8,
+      "wins": 53,
+      "win_rate": 54.1,
+      "realized": 10.11,
+      "ev_per_trade": 0.103,
+      "pnl_7d": 4.55,
+      "pnl_30d": -0.46,
       "recent": [
+        {
+          "coin": "SKR",
+          "pnl": 0.63,
+          "reason": "TP_HIT",
+          "when": "2026-10-11T23:35"
+        },
         {
           "coin": "FARTCOIN",
           "pnl": 0.59,
@@ -161,12 +167,6 @@
           "pnl": 0.5,
           "reason": "TP_HIT",
           "when": "2026-10-09T08:37"
-        },
-        {
-          "coin": "JTO",
-          "pnl": 0.58,
-          "reason": "TP_HIT",
-          "when": "2026-10-09T07:41"
         }
       ]
     },
@@ -256,14 +256,14 @@
     }
   },
   "autopilot": {
-    "updated": "2026-10-11T23:21:17.023483+00:00",
-    "equity_at_allocation": 335.15,
+    "updated": "2026-10-11T23:37:17.326595+00:00",
+    "equity_at_allocation": 335.68,
     "peak_equity": 361.81,
-    "drawdown_pct": 7.4,
+    "drawdown_pct": 7.2,
     "governor": "normal",
     "governor_multiplier": 1.0,
     "projected_collateral": 60.24,
-    "budget_cap": 201.09,
+    "budget_cap": 201.41,
     "strategies": {
       "momentum": {
         "enabled": true,
@@ -282,11 +282,11 @@
         "collateral": 5.12,
         "effective_collateral": 5.12,
         "max_open": 2,
-        "win_rate": 53.6,
-        "ev_per_trade": 0.098,
-        "trades": 97,
-        "rolling_pnl_7d": 3.92,
-        "score": 1.391,
+        "win_rate": 54.1,
+        "ev_per_trade": 0.103,
+        "trades": 98,
+        "rolling_pnl_7d": 4.55,
+        "score": 1.87,
         "reason": "steady: EV $+0.10 WR 54%"
       },
       "copy": {
