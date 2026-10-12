@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-12T20:03:22.985522+00:00",
+  "generated": "2026-10-12T20:19:23.114465+00:00",
   "wallet": "0xfd9996E88C3878805aDDA44cb36D427655280829",
   "strategies": {
     "momentum": {
@@ -87,15 +87,21 @@
       ]
     },
     "dip": {
-      "trades": 100,
-      "open": 6,
+      "trades": 101,
+      "open": 5,
       "wins": 54,
-      "win_rate": 54.0,
-      "realized": 9.93,
-      "ev_per_trade": 0.099,
-      "pnl_7d": 4.28,
-      "pnl_30d": -0.63,
+      "win_rate": 53.5,
+      "realized": 7.57,
+      "ev_per_trade": 0.075,
+      "pnl_7d": 1.91,
+      "pnl_30d": -3.0,
       "recent": [
+        {
+          "coin": "BLUR",
+          "pnl": -2.36,
+          "reason": "SL_HIT",
+          "when": "2026-10-12T20:10"
+        },
         {
           "coin": "SAND",
           "pnl": -1.21,
@@ -161,12 +167,6 @@
           "pnl": 0.6,
           "reason": "TP_HIT",
           "when": "2026-10-10T02:45"
-        },
-        {
-          "coin": "AIXBT",
-          "pnl": 0.64,
-          "reason": "TP_HIT",
-          "when": "2026-10-10T02:01"
         }
       ]
     },
@@ -256,14 +256,14 @@
     }
   },
   "autopilot": {
-    "updated": "2026-10-12T19:53:24.145842+00:00",
-    "equity_at_allocation": 328.09,
+    "updated": "2026-10-12T20:09:24.309033+00:00",
+    "equity_at_allocation": 327.85,
     "peak_equity": 361.81,
-    "drawdown_pct": 9.3,
+    "drawdown_pct": 9.4,
     "governor": "normal",
     "governor_multiplier": 1.0,
     "projected_collateral": 59.9,
-    "budget_cap": 196.86,
+    "budget_cap": 196.71,
     "strategies": {
       "momentum": {
         "enabled": true,
