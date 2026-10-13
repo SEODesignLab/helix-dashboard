@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-13T00:51:25.234009+00:00",
+  "generated": "2026-10-13T01:07:25.361344+00:00",
   "wallet": "0xfd9996E88C3878805aDDA44cb36D427655280829",
   "strategies": {
     "momentum": {
@@ -171,15 +171,21 @@
       ]
     },
     "copy": {
-      "trades": 31,
-      "open": 3,
+      "trades": 32,
+      "open": 2,
       "wins": 15,
-      "win_rate": 48.4,
-      "realized": 3.52,
-      "ev_per_trade": 0.114,
-      "pnl_7d": 0.7,
-      "pnl_30d": 0.42,
+      "win_rate": 46.9,
+      "realized": 2.67,
+      "ev_per_trade": 0.083,
+      "pnl_7d": -0.16,
+      "pnl_30d": -0.44,
       "recent": [
+        {
+          "coin": "SOL",
+          "pnl": -0.86,
+          "reason": "SL_HIT",
+          "when": "2026-10-13T00:54"
+        },
         {
           "coin": "TNSR",
           "pnl": 1.38,
@@ -245,25 +251,19 @@
           "pnl": -0.68,
           "reason": "SL_HIT",
           "when": "2026-09-23T14:10"
-        },
-        {
-          "coin": "HYPE",
-          "pnl": 1.2,
-          "reason": "TP_HIT",
-          "when": "2026-09-21T08:50"
         }
       ]
     }
   },
   "autopilot": {
-    "updated": "2026-10-13T00:41:26.450738+00:00",
-    "equity_at_allocation": 319.27,
+    "updated": "2026-10-13T00:57:29.991439+00:00",
+    "equity_at_allocation": 317.98,
     "peak_equity": 361.81,
-    "drawdown_pct": 11.8,
+    "drawdown_pct": 12.1,
     "governor": "caution",
     "governor_multiplier": 0.7,
     "projected_collateral": 58.37,
-    "budget_cap": 191.56,
+    "budget_cap": 190.79,
     "strategies": {
       "momentum": {
         "enabled": true,
@@ -282,24 +282,24 @@
         "collateral": 4.95,
         "effective_collateral": 4.0,
         "max_open": 2,
-        "win_rate": 52.4,
-        "ev_per_trade": 0.069,
-        "trades": 103,
-        "rolling_pnl_7d": 1.41,
-        "score": -0.219,
-        "reason": "steady: EV $+0.07 WR 52%"
+        "win_rate": 51.9,
+        "ev_per_trade": 0.061,
+        "trades": 104,
+        "rolling_pnl_7d": 0.73,
+        "score": -0.742,
+        "reason": "steady: EV $+0.06 WR 52%"
       },
       "copy": {
         "enabled": true,
         "collateral": 12.85,
         "effective_collateral": 8.99,
         "max_open": 3,
-        "win_rate": 48.4,
-        "ev_per_trade": 0.114,
-        "trades": 31,
-        "rolling_pnl_7d": 0.7,
-        "score": 0.999,
-        "reason": "steady: EV $+0.11 WR 48%"
+        "win_rate": 46.9,
+        "ev_per_trade": 0.083,
+        "trades": 32,
+        "rolling_pnl_7d": -0.16,
+        "score": 0.338,
+        "reason": "steady: EV $+0.08 WR 47%"
       },
       "v4": {
         "enabled": true,
@@ -415,7 +415,7 @@
       "support": 0.33
     },
     "ETH": {
-      "phase": "TESTING_SUPPORT",
+      "phase": "BREAKDOWN_WATCH",
       "signals": 5,
       "executed": 0,
       "support": 2421.29
