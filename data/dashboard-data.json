@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-13T00:35:25.111887+00:00",
+  "generated": "2026-10-13T00:51:25.234009+00:00",
   "wallet": "0xfd9996E88C3878805aDDA44cb36D427655280829",
   "strategies": {
     "momentum": {
@@ -87,15 +87,21 @@
       ]
     },
     "dip": {
-      "trades": 103,
-      "open": 3,
+      "trades": 104,
+      "open": 2,
       "wins": 54,
-      "win_rate": 52.4,
-      "realized": 7.07,
-      "ev_per_trade": 0.069,
-      "pnl_7d": 1.41,
-      "pnl_30d": -3.5,
+      "win_rate": 51.9,
+      "realized": 6.38,
+      "ev_per_trade": 0.061,
+      "pnl_7d": 0.73,
+      "pnl_30d": -4.18,
       "recent": [
+        {
+          "coin": "RUNE",
+          "pnl": -0.69,
+          "reason": "MAX_HOLD_TIMEOUT",
+          "when": "2026-10-13T00:42"
+        },
         {
           "coin": "MON",
           "pnl": -0.14,
@@ -161,12 +167,6 @@
           "pnl": 1.06,
           "reason": "TP_HIT",
           "when": "2026-10-11T09:46"
-        },
-        {
-          "coin": "JTO",
-          "pnl": 0.63,
-          "reason": "TP_HIT",
-          "when": "2026-10-10T14:29"
         }
       ]
     },
@@ -256,14 +256,14 @@
     }
   },
   "autopilot": {
-    "updated": "2026-10-13T00:25:27.334948+00:00",
-    "equity_at_allocation": 320.46,
+    "updated": "2026-10-13T00:41:26.450738+00:00",
+    "equity_at_allocation": 319.27,
     "peak_equity": 361.81,
-    "drawdown_pct": 11.4,
+    "drawdown_pct": 11.8,
     "governor": "caution",
     "governor_multiplier": 0.7,
     "projected_collateral": 58.37,
-    "budget_cap": 192.28,
+    "budget_cap": 191.56,
     "strategies": {
       "momentum": {
         "enabled": true,
@@ -282,12 +282,12 @@
         "collateral": 4.95,
         "effective_collateral": 4.0,
         "max_open": 2,
-        "win_rate": 52.9,
-        "ev_per_trade": 0.071,
-        "trades": 102,
-        "rolling_pnl_7d": 1.55,
-        "score": -0.111,
-        "reason": "steady: EV $+0.07 WR 53%"
+        "win_rate": 52.4,
+        "ev_per_trade": 0.069,
+        "trades": 103,
+        "rolling_pnl_7d": 1.41,
+        "score": -0.219,
+        "reason": "steady: EV $+0.07 WR 52%"
       },
       "copy": {
         "enabled": true,
