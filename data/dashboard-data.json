@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-16T13:08:04.854868+00:00",
+  "generated": "2026-10-16T13:24:04.969941+00:00",
   "wallet": "0xfd9996E88C3878805aDDA44cb36D427655280829",
   "strategies": {
     "momentum": {
@@ -256,19 +256,19 @@
     }
   },
   "autopilot": {
-    "updated": "2026-10-16T12:58:06.011740+00:00",
-    "equity_at_allocation": 325.68,
+    "updated": "2026-10-16T13:14:06.254139+00:00",
+    "equity_at_allocation": 325.37,
     "peak_equity": 361.81,
-    "drawdown_pct": 10.0,
-    "governor": "normal",
-    "governor_multiplier": 1.0,
+    "drawdown_pct": 10.1,
+    "governor": "caution",
+    "governor_multiplier": 0.7,
     "projected_collateral": 34.22,
-    "budget_cap": 195.41,
+    "budget_cap": 195.22,
     "strategies": {
       "momentum": {
         "enabled": true,
         "collateral": 4.96,
-        "effective_collateral": 4.96,
+        "effective_collateral": 4.0,
         "max_open": 2,
         "win_rate": 44.7,
         "ev_per_trade": 0.118,
@@ -280,7 +280,7 @@
       "dip": {
         "enabled": true,
         "collateral": 4.92,
-        "effective_collateral": 4.92,
+        "effective_collateral": 4.0,
         "max_open": 2,
         "win_rate": 51.9,
         "ev_per_trade": 0.059,
@@ -292,7 +292,7 @@
       "copy": {
         "enabled": true,
         "collateral": 4.82,
-        "effective_collateral": 4.82,
+        "effective_collateral": 4.0,
         "max_open": 3,
         "win_rate": 46.9,
         "ev_per_trade": 0.083,
