@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-19T03:32:33.640015+00:00",
+  "generated": "2026-10-19T03:48:33.755237+00:00",
   "wallet": "0xfd9996E88C3878805aDDA44cb36D427655280829",
   "strategies": {
     "momentum": {
@@ -178,7 +178,7 @@
       "realized": 2.67,
       "ev_per_trade": 0.083,
       "pnl_7d": -0.86,
-      "pnl_30d": 2.52,
+      "pnl_30d": 1.98,
       "recent": [
         {
           "coin": "SOL",
@@ -256,14 +256,14 @@
     }
   },
   "autopilot": {
-    "updated": "2026-10-19T03:22:34.853919+00:00",
-    "equity_at_allocation": 322.38,
+    "updated": "2026-10-19T03:38:34.894306+00:00",
+    "equity_at_allocation": 322.63,
     "peak_equity": 361.81,
-    "drawdown_pct": 10.9,
+    "drawdown_pct": 10.8,
     "governor": "caution",
     "governor_multiplier": 0.7,
     "projected_collateral": 36.86,
-    "budget_cap": 193.43,
+    "budget_cap": 193.58,
     "strategies": {
       "momentum": {
         "enabled": true,
