@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-28T03:18:17.059975+00:00",
+  "generated": "2026-10-28T03:34:17.191044+00:00",
   "wallet": "0xfd9996E88C3878805aDDA44cb36D427655280829",
   "strategies": {
     "momentum": {
@@ -10,7 +10,7 @@
       "realized": 5.57,
       "ev_per_trade": 0.118,
       "pnl_7d": 0,
-      "pnl_30d": -7.04,
+      "pnl_30d": -5.99,
       "recent": [
         {
           "coin": "TIA",
@@ -94,7 +94,7 @@
       "realized": 6.3,
       "ev_per_trade": 0.059,
       "pnl_7d": 0,
-      "pnl_30d": -5.95,
+      "pnl_30d": -4.82,
       "recent": [
         {
           "coin": "FOGO",
@@ -256,14 +256,14 @@
     }
   },
   "autopilot": {
-    "updated": "2026-10-28T03:08:18.191555+00:00",
-    "equity_at_allocation": 321.25,
+    "updated": "2026-10-28T03:24:18.349145+00:00",
+    "equity_at_allocation": 321.15,
     "peak_equity": 361.81,
     "drawdown_pct": 11.2,
     "governor": "caution",
     "governor_multiplier": 0.7,
     "projected_collateral": 57.76,
-    "budget_cap": 192.75,
+    "budget_cap": 192.69,
     "strategies": {
       "momentum": {
         "enabled": true,
