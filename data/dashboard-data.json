@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-28T11:02:20.761438+00:00",
+  "generated": "2026-10-28T11:18:20.903180+00:00",
   "wallet": "0xfd9996E88C3878805aDDA44cb36D427655280829",
   "strategies": {
     "momentum": {
@@ -256,14 +256,14 @@
     }
   },
   "autopilot": {
-    "updated": "2026-10-28T10:52:21.902524+00:00",
-    "equity_at_allocation": 321.29,
+    "updated": "2026-10-28T11:08:22.053481+00:00",
+    "equity_at_allocation": 321.11,
     "peak_equity": 361.81,
     "drawdown_pct": 11.2,
     "governor": "caution",
     "governor_multiplier": 0.7,
     "projected_collateral": 57.76,
-    "budget_cap": 192.78,
+    "budget_cap": 192.67,
     "strategies": {
       "momentum": {
         "enabled": true,
