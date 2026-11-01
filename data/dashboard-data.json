@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-01T08:39:04.886327+00:00",
+  "generated": "2026-11-01T08:55:05.003237+00:00",
   "wallet": "0xfd9996E88C3878805aDDA44cb36D427655280829",
   "strategies": {
     "momentum": {
@@ -256,7 +256,7 @@
     }
   },
   "autopilot": {
-    "updated": "2026-11-01T08:29:06.024799+00:00",
+    "updated": "2026-11-01T08:45:06.167519+00:00",
     "equity_at_allocation": 316.93,
     "peak_equity": 361.81,
     "drawdown_pct": 12.4,
