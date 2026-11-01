@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-01T16:23:08.532895+00:00",
+  "generated": "2026-11-01T16:39:08.648880+00:00",
   "wallet": "0xfd9996E88C3878805aDDA44cb36D427655280829",
   "strategies": {
     "momentum": {
@@ -94,7 +94,7 @@
       "realized": 6.3,
       "ev_per_trade": 0.059,
       "pnl_7d": 0,
-      "pnl_30d": -2.35,
+      "pnl_30d": -1.8,
       "recent": [
         {
           "coin": "FOGO",
@@ -256,14 +256,14 @@
     }
   },
   "autopilot": {
-    "updated": "2026-11-01T16:13:09.793805+00:00",
-    "equity_at_allocation": 317.64,
+    "updated": "2026-11-01T16:29:09.850519+00:00",
+    "equity_at_allocation": 317.59,
     "peak_equity": 361.81,
     "drawdown_pct": 12.2,
     "governor": "caution",
     "governor_multiplier": 0.7,
     "projected_collateral": 60.68,
-    "budget_cap": 190.58,
+    "budget_cap": 190.56,
     "strategies": {
       "momentum": {
         "enabled": true,
