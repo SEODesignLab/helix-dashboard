@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-02T00:23:01.068178+00:00",
+  "generated": "2026-11-02T00:39:01.198787+00:00",
   "wallet": "0xfd9996E88C3878805aDDA44cb36D427655280829",
   "strategies": {
     "momentum": {
@@ -10,7 +10,7 @@
       "realized": 5.57,
       "ev_per_trade": 0.118,
       "pnl_7d": 0,
-      "pnl_30d": -2.18,
+      "pnl_30d": -2.65,
       "recent": [
         {
           "coin": "TIA",
@@ -88,7 +88,7 @@
     },
     "dip": {
       "trades": 106,
-      "open": 3,
+      "open": 4,
       "wins": 55,
       "win_rate": 51.9,
       "realized": 6.3,
@@ -256,14 +256,14 @@
     }
   },
   "autopilot": {
-    "updated": "2026-11-02T00:13:02.311706+00:00",
-    "equity_at_allocation": 314.1,
+    "updated": "2026-11-02T00:29:02.428794+00:00",
+    "equity_at_allocation": 313.98,
     "peak_equity": 361.81,
     "drawdown_pct": 13.2,
     "governor": "caution",
     "governor_multiplier": 0.7,
     "projected_collateral": 60.68,
-    "budget_cap": 188.46,
+    "budget_cap": 188.39,
     "strategies": {
       "momentum": {
         "enabled": true,
