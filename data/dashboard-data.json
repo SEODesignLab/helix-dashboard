@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-03T08:55:17.595456+00:00",
+  "generated": "2026-11-03T09:11:17.746770+00:00",
   "wallet": "0xfd9996E88C3878805aDDA44cb36D427655280829",
   "strategies": {
     "momentum": {
@@ -87,15 +87,27 @@
       ]
     },
     "dip": {
-      "trades": 107,
-      "open": 3,
+      "trades": 109,
+      "open": 1,
       "wins": 55,
-      "win_rate": 51.4,
-      "realized": 4.67,
-      "ev_per_trade": 0.044,
-      "pnl_7d": -1.63,
-      "pnl_30d": 0.2,
+      "win_rate": 50.5,
+      "realized": 3.29,
+      "ev_per_trade": 0.03,
+      "pnl_7d": -3.01,
+      "pnl_30d": -1.18,
       "recent": [
+        {
+          "coin": "GRASS",
+          "pnl": -0.71,
+          "reason": "MAX_HOLD_TIMEOUT",
+          "when": "2026-11-03T09:03"
+        },
+        {
+          "coin": "USELESS",
+          "pnl": -0.68,
+          "reason": "MAX_HOLD_TIMEOUT",
+          "when": "2026-11-03T09:03"
+        },
         {
           "coin": "PONS",
           "pnl": -1.63,
@@ -155,18 +167,6 @@
           "pnl": 0.63,
           "reason": "TP_HIT",
           "when": "2026-10-11T23:35"
-        },
-        {
-          "coin": "FARTCOIN",
-          "pnl": 0.59,
-          "reason": "TP_HIT",
-          "when": "2026-10-11T16:12"
-        },
-        {
-          "coin": "MOVE",
-          "pnl": 0.82,
-          "reason": "TP_HIT",
-          "when": "2026-10-11T16:12"
         }
       ]
     },
@@ -256,14 +256,14 @@
     }
   },
   "autopilot": {
-    "updated": "2026-11-03T08:45:18.755624+00:00",
-    "equity_at_allocation": 310.56,
+    "updated": "2026-11-03T09:01:18.912145+00:00",
+    "equity_at_allocation": 310.83,
     "peak_equity": 361.81,
-    "drawdown_pct": 14.2,
+    "drawdown_pct": 14.1,
     "governor": "caution",
     "governor_multiplier": 0.7,
     "projected_collateral": 57.54,
-    "budget_cap": 186.34,
+    "budget_cap": 186.5,
     "strategies": {
       "momentum": {
         "enabled": true,
