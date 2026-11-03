@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-03T12:23:19.458257+00:00",
+  "generated": "2026-11-03T12:39:19.687529+00:00",
   "wallet": "0xfd9996E88C3878805aDDA44cb36D427655280829",
   "strategies": {
     "momentum": {
@@ -87,15 +87,21 @@
       ]
     },
     "dip": {
-      "trades": 109,
-      "open": 1,
+      "trades": 110,
+      "open": 0,
       "wins": 55,
-      "win_rate": 50.5,
-      "realized": 3.29,
-      "ev_per_trade": 0.03,
-      "pnl_7d": -3.01,
-      "pnl_30d": -1.18,
+      "win_rate": 50.0,
+      "realized": 2.89,
+      "ev_per_trade": 0.026,
+      "pnl_7d": -3.41,
+      "pnl_30d": -1.58,
       "recent": [
+        {
+          "coin": "AZTEC",
+          "pnl": -0.4,
+          "reason": "MAX_HOLD_TIMEOUT",
+          "when": "2026-11-03T12:33"
+        },
         {
           "coin": "GRASS",
           "pnl": -0.71,
@@ -161,12 +167,6 @@
           "pnl": 1.03,
           "reason": "TP_HIT",
           "when": "2026-10-12T04:53"
-        },
-        {
-          "coin": "SKR",
-          "pnl": 0.63,
-          "reason": "TP_HIT",
-          "when": "2026-10-11T23:35"
         }
       ]
     },
@@ -256,14 +256,14 @@
     }
   },
   "autopilot": {
-    "updated": "2026-11-03T12:13:20.650505+00:00",
-    "equity_at_allocation": 311.33,
+    "updated": "2026-11-03T12:29:20.767986+00:00",
+    "equity_at_allocation": 311.49,
     "peak_equity": 361.81,
-    "drawdown_pct": 14.0,
+    "drawdown_pct": 13.9,
     "governor": "caution",
     "governor_multiplier": 0.7,
     "projected_collateral": 57.54,
-    "budget_cap": 186.8,
+    "budget_cap": 186.89,
     "strategies": {
       "momentum": {
         "enabled": true,
