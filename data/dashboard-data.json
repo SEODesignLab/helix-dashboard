@@ -1,17 +1,23 @@
 {
-  "generated": "2026-11-04T18:31:34.694858+00:00",
+  "generated": "2026-11-04T18:47:34.841859+00:00",
   "wallet": "0xfd9996E88C3878805aDDA44cb36D427655280829",
   "strategies": {
     "momentum": {
-      "trades": 47,
-      "open": 1,
-      "wins": 21,
-      "win_rate": 44.7,
-      "realized": 5.57,
-      "ev_per_trade": 0.118,
-      "pnl_7d": 0,
-      "pnl_30d": -2.22,
+      "trades": 48,
+      "open": 0,
+      "wins": 22,
+      "win_rate": 45.8,
+      "realized": 5.72,
+      "ev_per_trade": 0.119,
+      "pnl_7d": 0.15,
+      "pnl_30d": -2.07,
       "recent": [
+        {
+          "coin": "USELESS",
+          "pnl": 0.15,
+          "reason": "SL_HIT",
+          "when": "2026-11-04T18:44"
+        },
         {
           "coin": "TIA",
           "pnl": -1.13,
@@ -77,12 +83,6 @@
           "pnl": -0.84,
           "reason": "SL_HIT",
           "when": "2026-10-06T02:18"
-        },
-        {
-          "coin": "FET",
-          "pnl": -0.8,
-          "reason": "ON_CHAIN_GONE",
-          "when": "2026-10-05T16:41"
         }
       ]
     },
@@ -256,14 +256,14 @@
     }
   },
   "autopilot": {
-    "updated": "2026-11-04T18:21:35.833704+00:00",
-    "equity_at_allocation": 311.99,
+    "updated": "2026-11-04T18:37:36.015557+00:00",
+    "equity_at_allocation": 311.17,
     "peak_equity": 361.81,
-    "drawdown_pct": 13.8,
+    "drawdown_pct": 14.0,
     "governor": "caution",
     "governor_multiplier": 0.7,
     "projected_collateral": 57.54,
-    "budget_cap": 187.19,
+    "budget_cap": 186.7,
     "strategies": {
       "momentum": {
         "enabled": true,
