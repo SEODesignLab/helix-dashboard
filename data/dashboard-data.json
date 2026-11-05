@@ -1,17 +1,23 @@
 {
-  "generated": "2026-11-05T15:03:45.276961+00:00",
+  "generated": "2026-11-05T15:19:45.398347+00:00",
   "wallet": "0xfd9996E88C3878805aDDA44cb36D427655280829",
   "strategies": {
     "momentum": {
-      "trades": 48,
-      "open": 1,
-      "wins": 22,
-      "win_rate": 45.8,
-      "realized": 5.72,
-      "ev_per_trade": 0.119,
-      "pnl_7d": 0.15,
-      "pnl_30d": -1.24,
+      "trades": 49,
+      "open": 0,
+      "wins": 23,
+      "win_rate": 46.9,
+      "realized": 6.13,
+      "ev_per_trade": 0.125,
+      "pnl_7d": 0.56,
+      "pnl_30d": -0.83,
       "recent": [
+        {
+          "coin": "FOGO",
+          "pnl": 0.41,
+          "reason": "ON_CHAIN_GONE",
+          "when": "2026-11-05T15:14"
+        },
         {
           "coin": "USELESS",
           "pnl": 0.15,
@@ -77,12 +83,6 @@
           "pnl": 3.26,
           "reason": "TP_HIT",
           "when": "2026-10-06T17:36"
-        },
-        {
-          "coin": "NIL",
-          "pnl": -0.84,
-          "reason": "SL_HIT",
-          "when": "2026-10-06T02:18"
         }
       ]
     },
@@ -256,14 +256,14 @@
     }
   },
   "autopilot": {
-    "updated": "2026-11-05T14:53:46.431756+00:00",
-    "equity_at_allocation": 308.88,
+    "updated": "2026-11-05T15:09:46.624459+00:00",
+    "equity_at_allocation": 307.06,
     "peak_equity": 361.81,
-    "drawdown_pct": 14.6,
+    "drawdown_pct": 15.1,
     "governor": "caution",
     "governor_multiplier": 0.7,
     "projected_collateral": 72.52,
-    "budget_cap": 185.33,
+    "budget_cap": 184.24,
     "strategies": {
       "momentum": {
         "enabled": true,
