@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-06T02:31:50.832841+00:00",
+  "generated": "2026-11-06T02:47:50.966310+00:00",
   "wallet": "0xfd9996E88C3878805aDDA44cb36D427655280829",
   "strategies": {
     "momentum": {
@@ -87,15 +87,21 @@
       ]
     },
     "dip": {
-      "trades": 110,
-      "open": 2,
+      "trades": 111,
+      "open": 1,
       "wins": 55,
-      "win_rate": 50.0,
-      "realized": 2.89,
-      "ev_per_trade": 0.026,
-      "pnl_7d": -3.41,
-      "pnl_30d": -0.41,
+      "win_rate": 49.5,
+      "realized": 2.41,
+      "ev_per_trade": 0.022,
+      "pnl_7d": -3.89,
+      "pnl_30d": -0.89,
       "recent": [
+        {
+          "coin": "NIL",
+          "pnl": -0.48,
+          "reason": "MAX_HOLD_TIMEOUT",
+          "when": "2026-11-06T02:44"
+        },
         {
           "coin": "AZTEC",
           "pnl": -0.4,
@@ -161,12 +167,6 @@
           "pnl": -1.21,
           "reason": "SL_HIT",
           "when": "2026-10-12T14:41"
-        },
-        {
-          "coin": "PUMP",
-          "pnl": 1.03,
-          "reason": "TP_HIT",
-          "when": "2026-10-12T04:53"
         }
       ]
     },
@@ -256,14 +256,14 @@
     }
   },
   "autopilot": {
-    "updated": "2026-11-06T02:21:52.009857+00:00",
-    "equity_at_allocation": 305.92,
+    "updated": "2026-11-06T02:37:52.134998+00:00",
+    "equity_at_allocation": 305.83,
     "peak_equity": 361.81,
-    "drawdown_pct": 15.4,
+    "drawdown_pct": 15.5,
     "governor": "caution",
     "governor_multiplier": 0.7,
     "projected_collateral": 71.02,
-    "budget_cap": 183.55,
+    "budget_cap": 183.5,
     "strategies": {
       "momentum": {
         "enabled": true,
