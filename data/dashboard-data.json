@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-06T01:43:50.440934+00:00",
+  "generated": "2026-11-06T01:59:50.569462+00:00",
   "wallet": "0xfd9996E88C3878805aDDA44cb36D427655280829",
   "strategies": {
     "momentum": {
@@ -94,7 +94,7 @@
       "realized": 2.89,
       "ev_per_trade": 0.026,
       "pnl_7d": -3.41,
-      "pnl_30d": -3.01,
+      "pnl_30d": -0.41,
       "recent": [
         {
           "coin": "AZTEC",
@@ -256,14 +256,14 @@
     }
   },
   "autopilot": {
-    "updated": "2026-11-06T01:33:51.602358+00:00",
-    "equity_at_allocation": 305.6,
+    "updated": "2026-11-06T01:49:51.814690+00:00",
+    "equity_at_allocation": 305.72,
     "peak_equity": 361.81,
     "drawdown_pct": 15.5,
     "governor": "caution",
     "governor_multiplier": 0.7,
     "projected_collateral": 71.02,
-    "budget_cap": 183.36,
+    "budget_cap": 183.43,
     "strategies": {
       "momentum": {
         "enabled": true,
