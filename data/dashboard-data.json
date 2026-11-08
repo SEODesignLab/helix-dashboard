@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-08T21:45:56.146958+00:00",
+  "generated": "2026-11-08T22:01:56.290635+00:00",
   "wallet": "0xfd9996E88C3878805aDDA44cb36D427655280829",
   "strategies": {
     "momentum": {
@@ -87,15 +87,21 @@
       ]
     },
     "dip": {
-      "trades": 116,
-      "open": 1,
+      "trades": 117,
+      "open": 0,
       "wins": 55,
-      "win_rate": 47.4,
-      "realized": -2.43,
-      "ev_per_trade": -0.021,
-      "pnl_7d": -8.73,
-      "pnl_30d": -6.1,
+      "win_rate": 47.0,
+      "realized": -3.49,
+      "ev_per_trade": -0.03,
+      "pnl_7d": -9.8,
+      "pnl_30d": -7.17,
       "recent": [
+        {
+          "coin": "XPL",
+          "pnl": -1.07,
+          "reason": "SL_HIT",
+          "when": "2026-11-08T21:54"
+        },
         {
           "coin": "ENA",
           "pnl": -0.8,
@@ -161,12 +167,6 @@
           "pnl": 0.9,
           "reason": "TP_HIT",
           "when": "2026-10-14T14:48"
-        },
-        {
-          "coin": "WIF",
-          "pnl": -0.98,
-          "reason": "MAX_HOLD_TIMEOUT",
-          "when": "2026-10-14T12:28"
         }
       ]
     },
@@ -256,14 +256,14 @@
     }
   },
   "autopilot": {
-    "updated": "2026-11-08T21:34:01.361145+00:00",
-    "equity_at_allocation": 295.76,
+    "updated": "2026-11-08T21:49:58.427740+00:00",
+    "equity_at_allocation": 295.65,
     "peak_equity": 361.81,
     "drawdown_pct": 18.3,
     "governor": "caution",
     "governor_multiplier": 0.7,
     "projected_collateral": 60.68,
-    "budget_cap": 177.45,
+    "budget_cap": 177.39,
     "strategies": {
       "momentum": {
         "enabled": true,
