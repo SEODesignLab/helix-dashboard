@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-08T02:01:45.933897+00:00",
+  "generated": "2026-11-08T02:17:46.079235+00:00",
   "wallet": "0xfd9996E88C3878805aDDA44cb36D427655280829",
   "strategies": {
     "momentum": {
@@ -87,15 +87,21 @@
       ]
     },
     "dip": {
-      "trades": 112,
-      "open": 5,
+      "trades": 113,
+      "open": 4,
       "wins": 55,
-      "win_rate": 49.1,
-      "realized": 0.85,
-      "ev_per_trade": 0.008,
-      "pnl_7d": -5.46,
-      "pnl_30d": -1.75,
+      "win_rate": 48.7,
+      "realized": 0.65,
+      "ev_per_trade": 0.006,
+      "pnl_7d": -5.65,
+      "pnl_30d": -1.95,
       "recent": [
+        {
+          "coin": "VVV",
+          "pnl": -0.2,
+          "reason": "MAX_HOLD_TIMEOUT",
+          "when": "2026-11-08T02:04"
+        },
         {
           "coin": "PONS",
           "pnl": -1.57,
@@ -161,12 +167,6 @@
           "pnl": -0.36,
           "reason": "MAX_HOLD_TIMEOUT",
           "when": "2026-10-13T00:08"
-        },
-        {
-          "coin": "BLUR",
-          "pnl": -2.36,
-          "reason": "SL_HIT",
-          "when": "2026-10-12T20:10"
         }
       ]
     },
@@ -256,14 +256,14 @@
     }
   },
   "autopilot": {
-    "updated": "2026-11-08T01:49:48.240803+00:00",
-    "equity_at_allocation": 299.68,
+    "updated": "2026-11-08T02:05:48.332619+00:00",
+    "equity_at_allocation": 299.34,
     "peak_equity": 361.81,
-    "drawdown_pct": 17.2,
+    "drawdown_pct": 17.3,
     "governor": "caution",
     "governor_multiplier": 0.7,
     "projected_collateral": 71.02,
-    "budget_cap": 179.81,
+    "budget_cap": 179.6,
     "strategies": {
       "momentum": {
         "enabled": true,
@@ -282,11 +282,11 @@
         "collateral": 4.67,
         "effective_collateral": 4.0,
         "max_open": 2,
-        "win_rate": 49.1,
-        "ev_per_trade": 0.008,
-        "trades": 112,
-        "rolling_pnl_7d": -5.46,
-        "score": -4.085,
+        "win_rate": 48.7,
+        "ev_per_trade": 0.006,
+        "trades": 113,
+        "rolling_pnl_7d": -5.65,
+        "score": -4.23,
         "reason": "steady: EV $+0.01 WR 49%"
       },
       "copy": {
