@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-08T05:45:47.879820+00:00",
+  "generated": "2026-11-08T06:01:48.054321+00:00",
   "wallet": "0xfd9996E88C3878805aDDA44cb36D427655280829",
   "strategies": {
     "momentum": {
@@ -87,15 +87,21 @@
       ]
     },
     "dip": {
-      "trades": 114,
-      "open": 3,
+      "trades": 115,
+      "open": 2,
       "wins": 55,
-      "win_rate": 48.2,
-      "realized": -0.69,
-      "ev_per_trade": -0.006,
-      "pnl_7d": -6.99,
-      "pnl_30d": -3.29,
+      "win_rate": 47.8,
+      "realized": -1.62,
+      "ev_per_trade": -0.014,
+      "pnl_7d": -7.93,
+      "pnl_30d": -4.22,
       "recent": [
+        {
+          "coin": "INIT",
+          "pnl": -0.94,
+          "reason": "MAX_HOLD_TIMEOUT",
+          "when": "2026-11-08T05:48"
+        },
         {
           "coin": "FOGO",
           "pnl": -1.34,
@@ -161,12 +167,6 @@
           "pnl": -0.69,
           "reason": "MAX_HOLD_TIMEOUT",
           "when": "2026-10-13T00:42"
-        },
-        {
-          "coin": "MON",
-          "pnl": -0.14,
-          "reason": "MAX_HOLD_TIMEOUT",
-          "when": "2026-10-13T00:30"
         }
       ]
     },
@@ -256,14 +256,14 @@
     }
   },
   "autopilot": {
-    "updated": "2026-11-08T05:33:48.971391+00:00",
-    "equity_at_allocation": 298.85,
+    "updated": "2026-11-08T05:49:49.128130+00:00",
+    "equity_at_allocation": 298.77,
     "peak_equity": 361.81,
     "drawdown_pct": 17.4,
     "governor": "caution",
     "governor_multiplier": 0.7,
     "projected_collateral": 60.68,
-    "budget_cap": 179.31,
+    "budget_cap": 179.26,
     "strategies": {
       "momentum": {
         "enabled": true,
@@ -282,10 +282,10 @@
         "collateral": 4.67,
         "effective_collateral": 4.0,
         "max_open": 2,
-        "win_rate": 48.2,
-        "ev_per_trade": -0.006,
-        "trades": 114,
-        "rolling_pnl_7d": -6.99,
+        "win_rate": 47.8,
+        "ev_per_trade": -0.014,
+        "trades": 115,
+        "rolling_pnl_7d": -7.93,
         "score": -4.23,
         "reason": "auto-disabled: EV $-0.01/trade, 14d $-6.99, 114 trades"
       },
