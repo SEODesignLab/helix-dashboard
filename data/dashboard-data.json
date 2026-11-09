@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-09T00:25:57.475298+00:00",
+  "generated": "2026-11-09T00:41:57.610532+00:00",
   "wallet": "0xfd9996E88C3878805aDDA44cb36D427655280829",
   "strategies": {
     "momentum": {
@@ -94,7 +94,7 @@
       "realized": -3.49,
       "ev_per_trade": -0.03,
       "pnl_7d": -9.8,
-      "pnl_30d": -7.17,
+      "pnl_30d": -7.81,
       "recent": [
         {
           "coin": "XPL",
@@ -256,14 +256,14 @@
     }
   },
   "autopilot": {
-    "updated": "2026-11-09T00:13:58.617230+00:00",
-    "equity_at_allocation": 295.31,
+    "updated": "2026-11-09T00:29:58.723585+00:00",
+    "equity_at_allocation": 295.36,
     "peak_equity": 361.81,
     "drawdown_pct": 18.4,
     "governor": "caution",
     "governor_multiplier": 0.7,
     "projected_collateral": 60.68,
-    "budget_cap": 177.19,
+    "budget_cap": 177.22,
     "strategies": {
       "momentum": {
         "enabled": true,
