@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-22T11:08:48.907997+00:00",
+  "generated": "2026-11-22T11:24:49.046827+00:00",
   "wallet": "0xfd9996E88C3878805aDDA44cb36D427655280829",
   "strategies": {
     "momentum": {
@@ -9,7 +9,7 @@
       "win_rate": 46.3,
       "realized": 7.47,
       "ev_per_trade": 0.138,
-      "pnl_7d": 0.63,
+      "pnl_7d": -2.17,
       "pnl_30d": 1.9,
       "recent": [
         {
@@ -256,7 +256,7 @@
     }
   },
   "autopilot": {
-    "updated": "2026-11-22T10:56:50.007194+00:00",
+    "updated": "2026-11-22T11:12:50.165628+00:00",
     "equity_at_allocation": 300.28,
     "peak_equity": 361.81,
     "drawdown_pct": 17.0,
