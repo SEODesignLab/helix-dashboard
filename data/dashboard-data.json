@@ -1,17 +1,23 @@
 {
-  "generated": "2026-11-24T09:17:13.084250+00:00",
+  "generated": "2026-11-24T09:33:13.210805+00:00",
   "wallet": "0xfd9996E88C3878805aDDA44cb36D427655280829",
   "strategies": {
     "momentum": {
-      "trades": 54,
-      "open": 2,
+      "trades": 55,
+      "open": 1,
       "wins": 25,
-      "win_rate": 46.3,
-      "realized": 7.47,
-      "ev_per_trade": 0.138,
-      "pnl_7d": -2.17,
-      "pnl_30d": 1.9,
+      "win_rate": 45.5,
+      "realized": 5.89,
+      "ev_per_trade": 0.107,
+      "pnl_7d": -3.75,
+      "pnl_30d": 0.32,
       "recent": [
+        {
+          "coin": "MON",
+          "pnl": -1.58,
+          "reason": "SL_HIT",
+          "when": "2026-11-24T09:28"
+        },
         {
           "coin": "kLUNC",
           "pnl": -1.54,
@@ -77,12 +83,6 @@
           "pnl": -0.83,
           "reason": "SL_HIT",
           "when": "2026-10-08T11:43"
-        },
-        {
-          "coin": "W",
-          "pnl": -0.84,
-          "reason": "SL_HIT",
-          "when": "2026-10-08T10:54"
         }
       ]
     },
@@ -256,14 +256,14 @@
     }
   },
   "autopilot": {
-    "updated": "2026-11-24T09:05:14.272653+00:00",
-    "equity_at_allocation": 297.15,
+    "updated": "2026-11-24T09:21:14.341839+00:00",
+    "equity_at_allocation": 297.19,
     "peak_equity": 361.81,
     "drawdown_pct": 17.9,
     "governor": "caution",
     "governor_multiplier": 0.7,
     "projected_collateral": 60.68,
-    "budget_cap": 178.29,
+    "budget_cap": 178.31,
     "strategies": {
       "momentum": {
         "enabled": true,
