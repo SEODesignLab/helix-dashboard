@@ -1,17 +1,23 @@
 {
-  "generated": "2026-11-24T12:45:14.978102+00:00",
+  "generated": "2026-11-24T13:01:15.111381+00:00",
   "wallet": "0xfd9996E88C3878805aDDA44cb36D427655280829",
   "strategies": {
     "momentum": {
-      "trades": 55,
-      "open": 1,
-      "wins": 25,
-      "win_rate": 45.5,
-      "realized": 5.89,
-      "ev_per_trade": 0.107,
-      "pnl_7d": -3.75,
-      "pnl_30d": 0.32,
+      "trades": 56,
+      "open": 0,
+      "wins": 26,
+      "win_rate": 46.4,
+      "realized": 6.6,
+      "ev_per_trade": 0.118,
+      "pnl_7d": -3.05,
+      "pnl_30d": 1.03,
       "recent": [
+        {
+          "coin": "BLUR",
+          "pnl": 0.71,
+          "reason": "MAX_HOLD",
+          "when": "2026-11-24T12:47"
+        },
         {
           "coin": "MON",
           "pnl": -1.58,
@@ -77,12 +83,6 @@
           "pnl": 0.27,
           "reason": "SL_HIT",
           "when": "2026-10-08T15:18"
-        },
-        {
-          "coin": "ACE",
-          "pnl": -0.83,
-          "reason": "SL_HIT",
-          "when": "2026-10-08T11:43"
         }
       ]
     },
@@ -256,26 +256,26 @@
     }
   },
   "autopilot": {
-    "updated": "2026-11-24T12:33:16.132090+00:00",
-    "equity_at_allocation": 297.59,
+    "updated": "2026-11-24T12:49:16.277149+00:00",
+    "equity_at_allocation": 297.45,
     "peak_equity": 361.81,
-    "drawdown_pct": 17.7,
+    "drawdown_pct": 17.8,
     "governor": "caution",
     "governor_multiplier": 0.7,
     "projected_collateral": 45.7,
-    "budget_cap": 178.55,
+    "budget_cap": 178.47,
     "strategies": {
       "momentum": {
         "enabled": true,
         "collateral": 4.46,
         "effective_collateral": 4.0,
         "max_open": 2,
-        "win_rate": 45.5,
-        "ev_per_trade": 0.107,
-        "trades": 55,
-        "rolling_pnl_7d": -3.75,
-        "score": -1.976,
-        "reason": "steady: EV $+0.11 WR 46%"
+        "win_rate": 46.4,
+        "ev_per_trade": 0.118,
+        "trades": 56,
+        "rolling_pnl_7d": -3.05,
+        "score": -1.432,
+        "reason": "steady: EV $+0.12 WR 46%"
       },
       "dip": {
         "enabled": false,
