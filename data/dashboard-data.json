@@ -1,17 +1,23 @@
 {
-  "generated": "2026-11-27T03:25:47.753940+00:00",
+  "generated": "2026-11-27T03:41:47.897782+00:00",
   "wallet": "0xfd9996E88C3878805aDDA44cb36D427655280829",
   "strategies": {
     "momentum": {
-      "trades": 58,
-      "open": 1,
-      "wins": 26,
-      "win_rate": 44.8,
-      "realized": 4.95,
-      "ev_per_trade": 0.085,
-      "pnl_7d": -4.7,
-      "pnl_30d": -0.62,
+      "trades": 59,
+      "open": 0,
+      "wins": 27,
+      "win_rate": 45.8,
+      "realized": 5.77,
+      "ev_per_trade": 0.098,
+      "pnl_7d": -3.87,
+      "pnl_30d": 0.2,
       "recent": [
+        {
+          "coin": "SKY",
+          "pnl": 0.83,
+          "reason": "SL_HIT",
+          "when": "2026-11-27T03:29"
+        },
         {
           "coin": "BLUR",
           "pnl": -0.89,
@@ -77,12 +83,6 @@
           "pnl": 0.15,
           "reason": "SL_HIT",
           "when": "2026-11-04T18:44"
-        },
-        {
-          "coin": "TIA",
-          "pnl": -1.13,
-          "reason": "SL_HIT",
-          "when": "2026-10-09T10:37"
         }
       ]
     },
@@ -256,14 +256,14 @@
     }
   },
   "autopilot": {
-    "updated": "2026-11-27T03:13:48.896128+00:00",
-    "equity_at_allocation": 298.57,
+    "updated": "2026-11-27T03:29:49.042213+00:00",
+    "equity_at_allocation": 298.62,
     "peak_equity": 361.81,
     "drawdown_pct": 17.5,
     "governor": "caution",
     "governor_multiplier": 0.7,
     "projected_collateral": 45.7,
-    "budget_cap": 179.14,
+    "budget_cap": 179.17,
     "strategies": {
       "momentum": {
         "enabled": true,
