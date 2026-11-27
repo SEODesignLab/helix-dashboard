@@ -1,17 +1,23 @@
 {
-  "generated": "2026-11-27T17:17:55.285028+00:00",
+  "generated": "2026-11-27T17:33:55.423981+00:00",
   "wallet": "0xfd9996E88C3878805aDDA44cb36D427655280829",
   "strategies": {
     "momentum": {
-      "trades": 59,
-      "open": 1,
+      "trades": 60,
+      "open": 0,
       "wins": 27,
-      "win_rate": 45.8,
-      "realized": 5.77,
-      "ev_per_trade": 0.098,
-      "pnl_7d": -1.7,
-      "pnl_30d": 0.2,
+      "win_rate": 45.0,
+      "realized": 5.16,
+      "ev_per_trade": 0.086,
+      "pnl_7d": -2.32,
+      "pnl_30d": -0.41,
       "recent": [
+        {
+          "coin": "PONS",
+          "pnl": -0.62,
+          "reason": "SL_HIT",
+          "when": "2026-11-27T17:25"
+        },
         {
           "coin": "SKY",
           "pnl": 0.83,
@@ -77,12 +83,6 @@
           "pnl": 0.41,
           "reason": "ON_CHAIN_GONE",
           "when": "2026-11-05T15:14"
-        },
-        {
-          "coin": "USELESS",
-          "pnl": 0.15,
-          "reason": "SL_HIT",
-          "when": "2026-11-04T18:44"
         }
       ]
     },
@@ -256,14 +256,14 @@
     }
   },
   "autopilot": {
-    "updated": "2026-11-27T17:05:56.424532+00:00",
-    "equity_at_allocation": 297.64,
+    "updated": "2026-11-27T17:21:56.606795+00:00",
+    "equity_at_allocation": 297.39,
     "peak_equity": 361.81,
-    "drawdown_pct": 17.7,
+    "drawdown_pct": 17.8,
     "governor": "caution",
     "governor_multiplier": 0.7,
     "projected_collateral": 45.7,
-    "budget_cap": 178.58,
+    "budget_cap": 178.43,
     "strategies": {
       "momentum": {
         "enabled": true,
